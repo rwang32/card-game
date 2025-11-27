@@ -1,0 +1,58 @@
+[
+  {
+    "id": "card-truth-1",
+    "title": "Tell the Truth",
+    "description": "Reveal an embarrassing truth about yourself.",
+    "categoryId": "truth",
+    "tags": ["personal", "icebreaker"],
+    "spicyness": 2
+  },
+  {
+    "id": "card-dare-1",
+    "title": "Do a Dare",
+    "description": "Perform a silly dance for 30 seconds.",
+    "categoryId": "dare",
+    "tags": ["physical", "silly"],
+    "spicyness": 2
+  },
+  {
+    "id": "card-group-1",
+    "title": "Group Toast",
+    "description": "Everyone raises a drink and says one thing they like about the person on their left.",
+    "categoryId": "group",
+    "tags": ["all", "nice"],
+    "spicyness": 1
+  },
+  {
+    "id": "card-challenge-1",
+    "title": "Minute Challenge",
+    "description": "Complete a small challenge (stack 5 coins) within 60 seconds or take a sip.",
+    "categoryId": "challenge",
+    "tags": ["timed", "skill"],
+    "spicyness": 1
+  },
+  {
+    "id": "card-social-1",
+    "title": "Social Question",
+    "description": "Ask someone to share the worst date they ever had.",
+    "categoryId": "social",
+    "tags": ["question", "conversation"],
+    "spicyness": 3
+  },
+  {
+    "id": "card-wildcard-1",
+    "title": "Wildcard",
+    "description": "Pick a rule that everyone must follow for the next 2 rounds.",
+    "categoryId": "wildcard",
+    "tags": ["rule", "meta"],
+    "spicyness": 1
+  },
+  {
+    "id": "card-partner-1",
+    "title": "Pair Up",
+    "description": "Choose a partner and exchange a funny story about each other.",
+    "categoryId": "partner",
+    "tags": ["partner", "interaction"],
+    "spicyness": 2
+  }
+]
