@@ -1,58 +1,925 @@
 [
   {
-    "id": "card-truth-1",
-    "title": "Tell the Truth",
-    "description": "Reveal an embarrassing truth about yourself.",
-    "categoryId": "truth",
-    "tags": ["personal", "icebreaker"],
-    "spicyness": 2
-  },
-  {
-    "id": "card-dare-1",
-    "title": "Do a Dare",
-    "description": "Perform a silly dance for 30 seconds.",
+    "id": "wild-001",
+    "title": "Animal Impression",
+    "description": "Do your best impression of an animal.",
     "categoryId": "dare",
-    "tags": ["physical", "silly"],
-    "spicyness": 2
+    "tags": ["impression", "silly"],
+    "spicyness": 3,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
   },
   {
-    "id": "card-group-1",
-    "title": "Group Toast",
-    "description": "Everyone raises a drink and says one thing they like about the person on their left.",
-    "categoryId": "group",
-    "tags": ["all", "nice"],
-    "spicyness": 1
+    "id": "wild-002",
+    "title": "Send Search History",
+    "description": "Send a screenshot of your internet search history to the group chat.",
+    "categoryId": "dare",
+    "tags": ["embarrassing", "phone"],
+    "spicyness": 4,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
   },
   {
-    "id": "card-challenge-1",
-    "title": "Minute Challenge",
-    "description": "Complete a small challenge (stack 5 coins) within 60 seconds or take a sip.",
+    "id": "wild-003",
+    "title": "Cartwheel",
+    "description": "Attempt to do a cartwheel. Drink if you fail.",
     "categoryId": "challenge",
-    "tags": ["timed", "skill"],
-    "spicyness": 1
+    "tags": ["physical", "skill"],
+    "spicyness": 3,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
   },
   {
-    "id": "card-social-1",
-    "title": "Social Question",
-    "description": "Ask someone to share the worst date they ever had.",
+    "id": "wild-004",
+    "title": "High School Embarrassment",
+    "description": "Share your most embarrassing moment in high school.",
+    "categoryId": "truth",
+    "tags": ["story", "embarrassing"],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-005",
+    "title": "Animal-Noise Call",
+    "description": "Call the first person in your contacts and have a full conversation using only animal noises.",
+    "categoryId": "dare",
+    "tags": ["phone", "prank"],
+    "spicyness": 4,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-006",
+    "title": "Rock Performance Mime",
+    "description": "Mime a legendary rock performance without naming the song or band. Group guesses; drink if they can't.",
+    "categoryId": "dare",
+    "tags": ["mime", "music"],
+    "spicyness": 3,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-007",
+    "title": "Impressing Story",
+    "description": "Share an embarrassing story about a time you tried to impress someone.",
+    "categoryId": "truth",
+    "tags": ["story", "embarrassing"],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-008",
+    "title": "Prank Call",
+    "description": "Make a prank call to someone in your contacts and try to keep them on the line for a full minute.",
+    "categoryId": "dare",
+    "tags": ["phone", "prank"],
+    "spicyness": 4,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-009",
+    "title": "Celebrity Imitation",
+    "description": "Imitate your favorite celebrity for one minute.",
+    "categoryId": "dare",
+    "tags": ["impression", "performance"],
+    "spicyness": 3,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-010",
+    "title": "Ridiculous Rumor",
+    "description": "Share the most ridiculous rumor you’ve ever heard about yourself.",
+    "categoryId": "truth",
+    "tags": ["rumor", "story"],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-011",
+    "title": "Cooking Show Pitch",
+    "description": "Pretend to be a contestant on a cooking show and describe the meal you’re preparing.",
+    "categoryId": "dare",
+    "tags": ["improv", "fun"],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-012",
+    "title": "10 Push-ups",
+    "description": "Do 10 push-ups. If you can’t, take a shot.",
+    "categoryId": "challenge",
+    "tags": ["fitness", "physical"],
+    "spicyness": 3,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-013",
+    "title": "Strangest Nap",
+    "description": "Reveal the strangest place you’ve ever had a nap.",
+    "categoryId": "truth",
+    "tags": ["story", "weird"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-014",
+    "title": "Propose on Left",
+    "description": "Propose to the person on your left with a ring made from whatever you can find.",
+    "categoryId": "dare",
+    "tags": ["romance", "silly"],
+    "spicyness": 4,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-015",
+    "title": "Send Silly Selfie to Ex",
+    "description": "Take a selfie with the silliest face possible and send it to your ex.",
+    "categoryId": "dare",
+    "tags": ["phone", "embarrassing"],
+    "spicyness": 4,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-016",
+    "title": "Movie Scene Mime",
+    "description": "Perform a mime of a popular movie scene. Drink if the group can’t guess it.",
+    "categoryId": "dare",
+    "tags": ["mime", "movie"],
+    "spicyness": 3,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-017",
+    "title": "Describe First Kiss",
+    "description": "Describe your first kiss without using the words 'mouth' or 'lips.'",
+    "categoryId": "truth",
+    "tags": ["romance", "story"],
+    "spicyness": 3,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-018",
+    "title": "Alphabet Backward",
+    "description": "Sing the alphabet backward. If you mess up, take a shot.",
+    "categoryId": "challenge",
+    "tags": ["skill", "fun"],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-019",
+    "title": "Tell a Joke",
+    "description": "Share the funniest joke you know. If no one laughs, drink.",
+    "categoryId": "dare",
+    "tags": ["joke", "performance"],
+    "spicyness": 1,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-020",
+    "title": "Breakdance Attempt",
+    "description": "Attempt to breakdance. If you can’t pull off a move, take a shot.",
+    "categoryId": "challenge",
+    "tags": ["dance", "physical"],
+    "spicyness": 3,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-021",
+    "title": "Secret Talent",
+    "description": "Share a secret talent no one in the room knows about.",
+    "categoryId": "truth",
+    "tags": ["talent", "reveal"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-022",
+    "title": "Fake Tour Guide",
+    "description": "Pretend to be a tour guide in a city you’ve never visited.",
+    "categoryId": "dare",
+    "tags": ["improv", "fun"],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-023",
+    "title": "Invent a Dance",
+    "description": "Invent a new dance move and demonstrate it to the group.",
+    "categoryId": "dare",
+    "tags": ["dance", "creative"],
+    "spicyness": 2,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-024",
+    "title": "Caught Doing Something",
+    "description": "Tell us about a time you got caught doing something you shouldn’t.",
+    "categoryId": "truth",
+    "tags": ["story", "embarrassing"],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-025",
+    "title": "Speak in Rhymes",
+    "description": "Speak in rhymes until your next turn.",
+    "categoryId": "dare",
+    "tags": ["language", "challenge"],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-026",
+    "title": "Name Three Dates",
+    "description": "Name three people you would want to date in the room and why.",
+    "categoryId": "truth",
+    "tags": ["dating", "social"],
+    "spicyness": 4,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-027",
+    "title": "Lottery List",
+    "description": "List three things you would do if you won the lottery.",
+    "categoryId": "truth",
+    "tags": ["imagination", "dreams"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "wild-028",
+    "title": "Swap Clothes",
+    "description": "Swap clothes with anyone in this room and wear them for the rest of the game.",
+    "categoryId": "dare",
+    "tags": ["clothing", "group"],
+    "spicyness": 4,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+
+  {
+    "id": "hilarious-001",
+    "title": "Worst Pickup Line",
+    "description": "Share your worst pickup line.",
+    "categoryId": "dare",
+    "tags": ["pickup", "funny"],
+    "spicyness": 1,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-002",
+    "title": "Family Member Impression",
+    "description": "Do an impression of a family member for one minute.",
+    "categoryId": "dare",
+    "tags": ["impression", "family"],
+    "spicyness": 2,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-003",
+    "title": "Public Embarrassment",
+    "description": "Tell us about the most embarrassing thing you’ve done in public.",
+    "categoryId": "truth",
+    "tags": ["story", "embarrassing"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-004",
+    "title": "Lick Your Elbow",
+    "description": "Attempt to lick your elbow. If you can’t, take a sip.",
+    "categoryId": "challenge",
+    "tags": ["challenge", "silly"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-005",
+    "title": "Messiest Person",
+    "description": "Name the messiest person in this room.",
     "categoryId": "social",
-    "tags": ["question", "conversation"],
-    "spicyness": 3
+    "tags": ["callout", "group"],
+    "spicyness": 1,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
   },
   {
-    "id": "card-wildcard-1",
-    "title": "Wildcard",
-    "description": "Pick a rule that everyone must follow for the next 2 rounds.",
-    "categoryId": "wildcard",
-    "tags": ["rule", "meta"],
-    "spicyness": 1
+    "id": "hilarious-006",
+    "title": "Act Out Movie Scene",
+    "description": "Act out a scene from your favorite movie.",
+    "categoryId": "dare",
+    "tags": ["acting", "movie"],
+    "spicyness": 1,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
   },
   {
-    "id": "card-partner-1",
-    "title": "Pair Up",
-    "description": "Choose a partner and exchange a funny story about each other.",
+    "id": "hilarious-007",
+    "title": "Gesture Vacation",
+    "description": "Describe your dream vacation using only hand gestures.",
+    "categoryId": "dare",
+    "tags": ["gesture", "creative"],
+    "spicyness": 1,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-008",
+    "title": "Touch Nose with Tongue",
+    "description": "Try to touch your nose with your tongue. If you can’t, take a sip.",
+    "categoryId": "challenge",
+    "tags": ["silly", "challenge"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-009",
+    "title": "Worst Advice",
+    "description": "Tell us the worst advice you’ve ever received.",
+    "categoryId": "truth",
+    "tags": ["advice", "story"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-010",
+    "title": "Hum a Song",
+    "description": "Hum a popular song and let the group guess it. If they can’t, you drink.",
+    "categoryId": "dare",
+    "tags": ["music", "guess"],
+    "spicyness": 1,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-011",
+    "title": "Morning Routine Mime",
+    "description": "Mime your morning routine without speaking.",
+    "categoryId": "dare",
+    "tags": ["mime", "daily"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-012",
+    "title": "Dramatic Nursery Rhyme",
+    "description": "Recite a nursery rhyme in a dramatic fashion.",
+    "categoryId": "dare",
+    "tags": ["performance", "funny"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-013",
+    "title": "Weirdest Thing Eaten",
+    "description": "Share the weirdest thing you’ve ever eaten.",
+    "categoryId": "truth",
+    "tags": ["food", "weird"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-014",
+    "title": "Act Like a Robot",
+    "description": "Act like a robot for one minute.",
+    "categoryId": "dare",
+    "tags": ["acting", "silly"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-015",
+    "title": "Draw Opposite Portrait",
+    "description": "Draw a portrait of the person sitting opposite you. If they don’t recognize themselves, you drink.",
+    "categoryId": "dare",
+    "tags": ["drawing", "art"],
+    "spicyness": 1,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-016",
+    "title": "Make Group Laugh",
+    "description": "Try and make the group laugh. If no one does, drink.",
+    "categoryId": "dare",
+    "tags": ["comedy", "performance"],
+    "spicyness": 1,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-017",
+    "title": "Last Embarrassing Moment",
+    "description": "Tell us about the last time you were embarrassed.",
+    "categoryId": "truth",
+    "tags": ["embarrassing", "story"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-018",
+    "title": "Superhero Imitation",
+    "description": "Imitate a superhero for one minute.",
+    "categoryId": "dare",
+    "tags": ["impression", "fun"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-019",
+    "title": "Share a Secret",
+    "description": "Share a secret you’ve never told anyone.",
+    "categoryId": "truth",
+    "tags": ["secret", "vulnerability"],
+    "spicyness": 3,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-020",
+    "title": "Impersonate Left",
+    "description": "Do your best impersonation of the person to your left.",
+    "categoryId": "dare",
+    "tags": ["impression", "group"],
+    "spicyness": 2,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-021",
+    "title": "Worst Cooking Disaster",
+    "description": "Tell us about your worst cooking disaster.",
+    "categoryId": "truth",
+    "tags": ["cooking", "story"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-022",
+    "title": "Speak Like Shakespeare",
+    "description": "Speak like Shakespeare until your next turn.",
+    "categoryId": "dare",
+    "tags": ["language", "fun"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-023",
+    "title": "Craziest Dream",
+    "description": "Share the craziest dream you’ve ever had.",
+    "categoryId": "truth",
+    "tags": ["dream", "story"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-024",
+    "title": "Juggle Three Items",
+    "description": "Try to juggle three items of your choice. If you drop an item, drink.",
+    "categoryId": "challenge",
+    "tags": ["skill", "physical"],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "hilarious-025",
+    "title": "Be a Cat",
+    "description": "Pretend you are a cat until your next turn.",
+    "categoryId": "dare",
+    "tags": ["roleplay", "funny"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+
+  {
+    "id": "witty-001",
+    "title": "Useless Talent",
+    "description": "Share the most useless talent you possess.",
+    "categoryId": "truth",
+    "tags": ["talent", "funny"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "witty-002",
+    "title": "Stranded Essentials",
+    "description": "Discuss three things you’d bring if you were stranded on a deserted island.",
+    "categoryId": "truth",
+    "tags": ["imagination", "strategy"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "witty-003",
+    "title": "Ridiculous Conspiracy",
+    "description": "Share the most ridiculous conspiracy theory you’ve heard.",
+    "categoryId": "truth",
+    "tags": ["conspiracy", "funny"],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "witty-004",
+    "title": "Dramatic Wikipedia",
+    "description": "Do a dramatic reading of a random Wikipedia article.",
+    "categoryId": "dare",
+    "tags": ["performance", "improv"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "witty-005",
+    "title": "Guess Wallet Money",
+    "description": "Guess the amount of money in your wallet. If you’re wrong, take a sip.",
+    "categoryId": "challenge",
+    "tags": ["money", "risk"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "witty-006",
+    "title": "Childhood Embarrassment",
+    "description": "Share the most embarrassing moment from your childhood.",
+    "categoryId": "truth",
+    "tags": ["story", "childhood"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "witty-007",
+    "title": "Balance Spoon on Nose",
+    "description": "Attempt to balance a spoon on your nose for one minute. If it falls, take a shot.",
+    "categoryId": "challenge",
+    "tags": ["skill", "funny"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "witty-008",
+    "title": "Funny Pickup Line",
+    "description": "Share a funny pickup line you’ve used or heard.",
+    "categoryId": "dare",
+    "tags": ["pickup", "humor"],
+    "spicyness": 1,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "witty-009",
+    "title": "Tongue Twister",
+    "description": "Recite a tongue twister without making a mistake. Drink if you do.",
+    "categoryId": "challenge",
+    "tags": ["language", "skill"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "witty-010",
+    "title": "Act Like a Chicken",
+    "description": "Act like a chicken for one minute.",
+    "categoryId": "dare",
+    "tags": ["silly", "improv"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "witty-011",
+    "title": "Weird Google Search",
+    "description": "Share the most ridiculous thing you’ve ever googled.",
+    "categoryId": "truth",
+    "tags": ["internet", "embarrassing"],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "witty-012",
+    "title": "Touch Toes",
+    "description": "Try to touch your toes without bending your knees. If you can’t, take a drink.",
+    "categoryId": "challenge",
+    "tags": ["flexibility", "physical"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "witty-013",
+    "title": "Foolish for Love",
+    "description": "Share the most foolish thing you’ve done for love.",
+    "categoryId": "truth",
+    "tags": ["romance", "story"],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "witty-014",
+    "title": "Catwalk",
+    "description": "Do a catwalk across the room. If you trip, take a shot.",
+    "categoryId": "dare",
+    "tags": ["performance", "fashion"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "witty-015",
+    "title": "Tell a Joke",
+    "description": "Tell us your favorite joke. If no one laughs, take a sip.",
+    "categoryId": "dare",
+    "tags": ["comedy", "performance"],
+    "spicyness": 1,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "witty-016",
+    "title": "Celebrity Best Friend",
+    "description": "Name a celebrity that you think would be your best friend.",
+    "categoryId": "truth",
+    "tags": ["celeb", "fun"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "witty-017",
+    "title": "Ridiculous Selfie",
+    "description": "Take a selfie with the most ridiculous facial expression you can make and post it to your story.",
+    "categoryId": "dare",
+    "tags": ["photo", "social"],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "witty-018",
+    "title": "DM a Random Follower",
+    "description": "Go through your Instagram following and have the group pick a random person to DM with \"I love you.\"",
+    "categoryId": "dare",
+    "tags": ["social", "phone"],
+    "spicyness": 4,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "witty-019",
+    "title": "British Accent",
+    "description": "Put on your best British accent until your next turn.",
+    "categoryId": "dare",
+    "tags": ["accent", "fun"],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "witty-020",
+    "title": "Handstand",
+    "description": "Attempt a handstand against the wall for five seconds. If you fail, take a shot.",
+    "categoryId": "challenge",
+    "tags": ["physical", "skill"],
+    "spicyness": 3,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+
+  {
+    "id": "dirty-001",
+    "title": "One-Night Stand Pick",
+    "description": "Point to the person in this room you would want to have a one-night stand with.",
+    "categoryId": "social",
+    "tags": ["adult", "flirty"],
+    "spicyness": 5,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dirty-002",
+    "title": "Sensual Dance",
+    "description": "Do a sensual dance for the person across from you.",
+    "categoryId": "dare",
+    "tags": ["adult", "dance"],
+    "spicyness": 5,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dirty-003",
+    "title": "Hottest Body",
+    "description": "Name the person who has the hottest body in this room.",
+    "categoryId": "social",
+    "tags": ["adult", "compliment"],
+    "spicyness": 4,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dirty-004",
+    "title": "Make Out Left",
+    "description": "Make out with the person to your left for one minute.",
     "categoryId": "partner",
-    "tags": ["partner", "interaction"],
-    "spicyness": 2
+    "tags": ["kiss", "partner"],
+    "spicyness": 5,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dirty-005",
+    "title": "Demonstrate Position",
+    "description": "Demonstrate your favorite sexual position using pillows.",
+    "categoryId": "dare",
+    "tags": ["adult", "demonstration"],
+    "spicyness": 5,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dirty-006",
+    "title": "Share Sexy Photo",
+    "description": "Share a sexy photo on your Instagram right now.",
+    "categoryId": "dare",
+    "tags": ["social", "adult"],
+    "spicyness": 5,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dirty-007",
+    "title": "Guess Underwear Color",
+    "description": "Guess the underwear color of the person to your right. If wrong, take a shot.",
+    "categoryId": "dare",
+    "tags": ["adult", "game"],
+    "spicyness": 5,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dirty-008",
+    "title": "Describe Best Kiss",
+    "description": "Describe the best kiss you’ve ever had.",
+    "categoryId": "truth",
+    "tags": ["romance", "story"],
+    "spicyness": 4,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dirty-009",
+    "title": "Text Your Ex",
+    "description": "Text your ex \"I miss you\" and show the screenshot to the group.",
+    "categoryId": "dare",
+    "tags": ["phone", "embarrassing"],
+    "spicyness": 4,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dirty-010",
+    "title": "Flash Abs",
+    "description": "Flash your abs or belly to the group.",
+    "categoryId": "dare",
+    "tags": ["adult", "expose"],
+    "spicyness": 5,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dirty-011",
+    "title": "Erotic Massage",
+    "description": "Give an erotic massage to the person sitting next to you.",
+    "categoryId": "partner",
+    "tags": ["adult", "touch"],
+    "spicyness": 5,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dirty-012",
+    "title": "Floor Thrust",
+    "description": "Show off your stroke game and thrust on the floor for a minute.",
+    "categoryId": "dare",
+    "tags": ["adult", "explicit"],
+    "spicyness": 5,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dirty-013",
+    "title": "Bar Flirt",
+    "description": "Flirt with someone from the group as if you were in a bar.",
+    "categoryId": "dare",
+    "tags": ["flirty", "roleplay"],
+    "spicyness": 4,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dirty-014",
+    "title": "Sexy Crawl",
+    "description": "Do a sexy crawl across the room.",
+    "categoryId": "dare",
+    "tags": ["adult", "performance"],
+    "spicyness": 5,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dirty-015",
+    "title": "Lap Dance",
+    "description": "Give a lap dance to the person of your choice.",
+    "categoryId": "partner",
+    "tags": ["adult", "dance"],
+    "spicyness": 5,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dirty-016",
+    "title": "Kiss Earlobe",
+    "description": "Kiss the earlobe of the person across from you.",
+    "categoryId": "partner",
+    "tags": ["kiss", "partner"],
+    "spicyness": 4,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dirty-017",
+    "title": "Risky Text",
+    "description": "Send a risky text to a random contact on your phone and show the group the response.",
+    "categoryId": "dare",
+    "tags": ["phone", "adult"],
+    "spicyness": 5,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dirty-018",
+    "title": "Make Out Two Minutes",
+    "description": "Make out with someone of your choice for two minutes.",
+    "categoryId": "partner",
+    "tags": ["kiss", "partner"],
+    "spicyness": 5,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dirty-019",
+    "title": "Porn Star Impression",
+    "description": "Do your best impression of a porn star moaning.",
+    "categoryId": "dare",
+    "tags": ["adult", "impression"],
+    "spicyness": 5,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
   }
 ]

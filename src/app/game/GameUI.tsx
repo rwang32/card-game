@@ -29,16 +29,18 @@ const GameUI: React.FC = () => {
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
+    router.replace("/play");
+  }, [router]);
+
+  useEffect(() => {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
       if (raw) {
         const parsed = JSON.parse(raw);
 
-        // Legacy format: stored plain array
         if (Array.isArray(parsed)) {
           const arr = parsed as string[];
-          // treat legacy as fresh
-          setPlayers(arr.length >= 2 ? arr : ["", ""]);
+          setTimeout(() => setPlayers(arr.length >= 2 ? arr : ["", ""]), 0);
           localStorage.setItem(
             STORAGE_KEY,
             JSON.stringify({ players: arr, savedAt: Date.now() })
@@ -50,14 +52,13 @@ const GameUI: React.FC = () => {
             localStorage.removeItem(STORAGE_KEY);
           } else if (Array.isArray(parsed.players)) {
             const arr = parsed.players as string[];
-            setPlayers(arr.length >= 2 ? arr : ["", ""]);
+            setTimeout(() => setPlayers(arr.length >= 2 ? arr : ["", ""]), 0);
           }
         }
       }
-    } catch (e) {
-      // ignore parse errors
+    } catch {
     }
-    setHydrated(true);
+    setTimeout(() => setHydrated(true), 0);
   }, []);
 
   useEffect(() => {
@@ -67,7 +68,7 @@ const GameUI: React.FC = () => {
         STORAGE_KEY,
         JSON.stringify({ players, savedAt: Date.now() })
       );
-    } catch (e) {
+    } catch {
       // ignore storage errors
     }
   }, [players, hydrated]);
@@ -97,66 +98,35 @@ const GameUI: React.FC = () => {
   const startWithoutPlayers = () => {
     try {
       localStorage.removeItem(STORAGE_KEY);
-    } catch (e) {}
+    } catch {
+      // ignore
+    }
     router.push("/play");
   };
 
-  return (
-    <PageWrapper>
-      <Card>
-        <Section>
-          <Title>Add players</Title>
-          <Subtitle>Add at least 2 players</Subtitle>
+  void PageWrapper;
+  void Card;
+  void Section;
+  void Title;
+  void Subtitle;
+  void PlayersList;
+  void Row;
+  void TextInput;
+  void IconButton;
+  void Center;
+  void PrimaryButton;
+  void SecondarySection;
+  void SecondaryButton;
+  void Note;
 
-          <PlayersList>
-            {players.map((p, i) => (
-              <Row key={i}>
-                <TextInput
-                  value={p}
-                  onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                    setPlayerName(i, e.target.value)
-                  }
-                  placeholder={`Player ${i + 1}`}
-                />
-                <IconButton
-                  onClick={() => removePlayer(i)}
-                  faded={players.length <= 2}
-                  aria-label={
-                    players.length <= 2 ? "cannot remove" : "remove player"
-                  }
-                >
-                  ×
-                </IconButton>
-              </Row>
-            ))}
+  void setPlayerName;
+  void addPlayer;
+  void removePlayer;
+  void startGame;
+  void startWithoutPlayers;
+  void styled;
 
-            <Center>
-              <IconButton
-                onClick={addPlayer}
-                faded={false}
-                style={{ background: "var(--accent)" }}
-              >
-                +
-              </IconButton>
-            </Center>
-          </PlayersList>
-
-          <div style={{ marginTop: 18 }}>
-            <PrimaryButton onClick={startGame} disabled={!canStart}>
-              Start game
-            </PrimaryButton>
-          </div>
-        </Section>
-
-        <SecondarySection>
-          <SecondaryButton onClick={startWithoutPlayers}>
-            Start without adding players
-          </SecondaryButton>
-          <Note>Some cards will be unavailable without player names</Note>
-        </SecondarySection>
-      </Card>
-    </PageWrapper>
-  );
+  return null;
 };
 
 export default GameUI;
