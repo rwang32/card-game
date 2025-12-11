@@ -4,8 +4,11 @@
     "title": "Animal Impression",
     "description": "Do your best impression of an animal.",
     "categoryId": "dare",
-    "tags": ["impression", "silly"],
-    "spicyness": 3,
+    "tags": [
+      "impression",
+      "silly"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -14,8 +17,11 @@
     "title": "Send Search History",
     "description": "Send a screenshot of your internet search history to the group chat.",
     "categoryId": "dare",
-    "tags": ["embarrassing", "phone"],
-    "spicyness": 4,
+    "tags": [
+      "embarrassing",
+      "phone"
+    ],
+    "spicyness": 2,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -24,8 +30,11 @@
     "title": "Cartwheel",
     "description": "Attempt to do a cartwheel. Drink if you fail.",
     "categoryId": "challenge",
-    "tags": ["physical", "skill"],
-    "spicyness": 3,
+    "tags": [
+      "physical",
+      "skill"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -34,8 +43,11 @@
     "title": "High School Embarrassment",
     "description": "Share your most embarrassing moment in high school.",
     "categoryId": "truth",
-    "tags": ["story", "embarrassing"],
-    "spicyness": 2,
+    "tags": [
+      "story",
+      "embarrassing"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -44,8 +56,11 @@
     "title": "Animal-Noise Call",
     "description": "Call the first person in your contacts and have a full conversation using only animal noises.",
     "categoryId": "dare",
-    "tags": ["phone", "prank"],
-    "spicyness": 4,
+    "tags": [
+      "phone",
+      "prank"
+    ],
+    "spicyness": 2,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -54,8 +69,11 @@
     "title": "Rock Performance Mime",
     "description": "Mime a legendary rock performance without naming the song or band. Group guesses; drink if they can't.",
     "categoryId": "dare",
-    "tags": ["mime", "music"],
-    "spicyness": 3,
+    "tags": [
+      "mime",
+      "music"
+    ],
+    "spicyness": 1,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -64,8 +82,11 @@
     "title": "Impressing Story",
     "description": "Share an embarrassing story about a time you tried to impress someone.",
     "categoryId": "truth",
-    "tags": ["story", "embarrassing"],
-    "spicyness": 2,
+    "tags": [
+      "story",
+      "embarrassing"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -74,8 +95,11 @@
     "title": "Prank Call",
     "description": "Make a prank call to someone in your contacts and try to keep them on the line for a full minute.",
     "categoryId": "dare",
-    "tags": ["phone", "prank"],
-    "spicyness": 4,
+    "tags": [
+      "phone",
+      "prank"
+    ],
+    "spicyness": 2,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -84,8 +108,11 @@
     "title": "Celebrity Imitation",
     "description": "Imitate your favorite celebrity for one minute.",
     "categoryId": "dare",
-    "tags": ["impression", "performance"],
-    "spicyness": 3,
+    "tags": [
+      "impression",
+      "performance"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -94,8 +121,11 @@
     "title": "Ridiculous Rumor",
     "description": "Share the most ridiculous rumor you’ve ever heard about yourself.",
     "categoryId": "truth",
-    "tags": ["rumor", "story"],
-    "spicyness": 2,
+    "tags": [
+      "rumor",
+      "story"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -104,8 +134,11 @@
     "title": "Cooking Show Pitch",
     "description": "Pretend to be a contestant on a cooking show and describe the meal you’re preparing.",
     "categoryId": "dare",
-    "tags": ["improv", "fun"],
-    "spicyness": 2,
+    "tags": [
+      "improv",
+      "fun"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -114,8 +147,11 @@
     "title": "10 Push-ups",
     "description": "Do 10 push-ups. If you can’t, take a shot.",
     "categoryId": "challenge",
-    "tags": ["fitness", "physical"],
-    "spicyness": 3,
+    "tags": [
+      "fitness",
+      "physical"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -124,8 +160,11 @@
     "title": "Strangest Nap",
     "description": "Reveal the strangest place you’ve ever had a nap.",
     "categoryId": "truth",
-    "tags": ["story", "weird"],
-    "spicyness": 1,
+    "tags": [
+      "story",
+      "weird"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -134,8 +173,11 @@
     "title": "Propose on Left",
     "description": "Propose to the person on your left with a ring made from whatever you can find.",
     "categoryId": "dare",
-    "tags": ["romance", "silly"],
-    "spicyness": 4,
+    "tags": [
+      "romance",
+      "silly"
+    ],
+    "spicyness": 2,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -144,8 +186,11 @@
     "title": "Send Silly Selfie to Ex",
     "description": "Take a selfie with the silliest face possible and send it to your ex.",
     "categoryId": "dare",
-    "tags": ["phone", "embarrassing"],
-    "spicyness": 4,
+    "tags": [
+      "phone",
+      "embarrassing"
+    ],
+    "spicyness": 2,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -154,8 +199,11 @@
     "title": "Movie Scene Mime",
     "description": "Perform a mime of a popular movie scene. Drink if the group can’t guess it.",
     "categoryId": "dare",
-    "tags": ["mime", "movie"],
-    "spicyness": 3,
+    "tags": [
+      "mime",
+      "movie"
+    ],
+    "spicyness": 1,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -164,8 +212,11 @@
     "title": "Describe First Kiss",
     "description": "Describe your first kiss without using the words 'mouth' or 'lips.'",
     "categoryId": "truth",
-    "tags": ["romance", "story"],
-    "spicyness": 3,
+    "tags": [
+      "romance",
+      "story"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -174,8 +225,11 @@
     "title": "Alphabet Backward",
     "description": "Sing the alphabet backward. If you mess up, take a shot.",
     "categoryId": "challenge",
-    "tags": ["skill", "fun"],
-    "spicyness": 2,
+    "tags": [
+      "skill",
+      "fun"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -184,8 +238,11 @@
     "title": "Tell a Joke",
     "description": "Share the funniest joke you know. If no one laughs, drink.",
     "categoryId": "dare",
-    "tags": ["joke", "performance"],
-    "spicyness": 1,
+    "tags": [
+      "joke",
+      "performance"
+    ],
+    "spicyness": 0,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -194,8 +251,11 @@
     "title": "Breakdance Attempt",
     "description": "Attempt to breakdance. If you can’t pull off a move, take a shot.",
     "categoryId": "challenge",
-    "tags": ["dance", "physical"],
-    "spicyness": 3,
+    "tags": [
+      "dance",
+      "physical"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -204,8 +264,11 @@
     "title": "Secret Talent",
     "description": "Share a secret talent no one in the room knows about.",
     "categoryId": "truth",
-    "tags": ["talent", "reveal"],
-    "spicyness": 1,
+    "tags": [
+      "talent",
+      "reveal"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -214,8 +277,11 @@
     "title": "Fake Tour Guide",
     "description": "Pretend to be a tour guide in a city you’ve never visited.",
     "categoryId": "dare",
-    "tags": ["improv", "fun"],
-    "spicyness": 2,
+    "tags": [
+      "improv",
+      "fun"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -224,8 +290,11 @@
     "title": "Invent a Dance",
     "description": "Invent a new dance move and demonstrate it to the group.",
     "categoryId": "dare",
-    "tags": ["dance", "creative"],
-    "spicyness": 2,
+    "tags": [
+      "dance",
+      "creative"
+    ],
+    "spicyness": 1,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -234,8 +303,11 @@
     "title": "Caught Doing Something",
     "description": "Tell us about a time you got caught doing something you shouldn’t.",
     "categoryId": "truth",
-    "tags": ["story", "embarrassing"],
-    "spicyness": 2,
+    "tags": [
+      "story",
+      "embarrassing"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -244,8 +316,11 @@
     "title": "Speak in Rhymes",
     "description": "Speak in rhymes until your next turn.",
     "categoryId": "dare",
-    "tags": ["language", "challenge"],
-    "spicyness": 2,
+    "tags": [
+      "language",
+      "challenge"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -254,8 +329,11 @@
     "title": "Name Three Dates",
     "description": "Name three people you would want to date in the room and why.",
     "categoryId": "truth",
-    "tags": ["dating", "social"],
-    "spicyness": 4,
+    "tags": [
+      "dating",
+      "social"
+    ],
+    "spicyness": 2,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -264,8 +342,11 @@
     "title": "Lottery List",
     "description": "List three things you would do if you won the lottery.",
     "categoryId": "truth",
-    "tags": ["imagination", "dreams"],
-    "spicyness": 1,
+    "tags": [
+      "imagination",
+      "dreams"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -274,19 +355,24 @@
     "title": "Swap Clothes",
     "description": "Swap clothes with anyone in this room and wear them for the rest of the game.",
     "categoryId": "dare",
-    "tags": ["clothing", "group"],
-    "spicyness": 4,
+    "tags": [
+      "clothing",
+      "group"
+    ],
+    "spicyness": 2,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
-
   {
     "id": "hilarious-001",
     "title": "Worst Pickup Line",
     "description": "Share your worst pickup line.",
     "categoryId": "dare",
-    "tags": ["pickup", "funny"],
-    "spicyness": 1,
+    "tags": [
+      "pickup",
+      "funny"
+    ],
+    "spicyness": 0,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -295,8 +381,11 @@
     "title": "Family Member Impression",
     "description": "Do an impression of a family member for one minute.",
     "categoryId": "dare",
-    "tags": ["impression", "family"],
-    "spicyness": 2,
+    "tags": [
+      "impression",
+      "family"
+    ],
+    "spicyness": 1,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -305,8 +394,11 @@
     "title": "Public Embarrassment",
     "description": "Tell us about the most embarrassing thing you’ve done in public.",
     "categoryId": "truth",
-    "tags": ["story", "embarrassing"],
-    "spicyness": 1,
+    "tags": [
+      "story",
+      "embarrassing"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -315,8 +407,11 @@
     "title": "Lick Your Elbow",
     "description": "Attempt to lick your elbow. If you can’t, take a sip.",
     "categoryId": "challenge",
-    "tags": ["challenge", "silly"],
-    "spicyness": 1,
+    "tags": [
+      "challenge",
+      "silly"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -325,8 +420,11 @@
     "title": "Messiest Person",
     "description": "Name the messiest person in this room.",
     "categoryId": "social",
-    "tags": ["callout", "group"],
-    "spicyness": 1,
+    "tags": [
+      "callout",
+      "group"
+    ],
+    "spicyness": 0,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -335,8 +433,11 @@
     "title": "Act Out Movie Scene",
     "description": "Act out a scene from your favorite movie.",
     "categoryId": "dare",
-    "tags": ["acting", "movie"],
-    "spicyness": 1,
+    "tags": [
+      "acting",
+      "movie"
+    ],
+    "spicyness": 0,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -345,8 +446,11 @@
     "title": "Gesture Vacation",
     "description": "Describe your dream vacation using only hand gestures.",
     "categoryId": "dare",
-    "tags": ["gesture", "creative"],
-    "spicyness": 1,
+    "tags": [
+      "gesture",
+      "creative"
+    ],
+    "spicyness": 0,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -355,8 +459,11 @@
     "title": "Touch Nose with Tongue",
     "description": "Try to touch your nose with your tongue. If you can’t, take a sip.",
     "categoryId": "challenge",
-    "tags": ["silly", "challenge"],
-    "spicyness": 1,
+    "tags": [
+      "silly",
+      "challenge"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -365,8 +472,11 @@
     "title": "Worst Advice",
     "description": "Tell us the worst advice you’ve ever received.",
     "categoryId": "truth",
-    "tags": ["advice", "story"],
-    "spicyness": 1,
+    "tags": [
+      "advice",
+      "story"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -375,8 +485,11 @@
     "title": "Hum a Song",
     "description": "Hum a popular song and let the group guess it. If they can’t, you drink.",
     "categoryId": "dare",
-    "tags": ["music", "guess"],
-    "spicyness": 1,
+    "tags": [
+      "music",
+      "guess"
+    ],
+    "spicyness": 0,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -385,8 +498,11 @@
     "title": "Morning Routine Mime",
     "description": "Mime your morning routine without speaking.",
     "categoryId": "dare",
-    "tags": ["mime", "daily"],
-    "spicyness": 1,
+    "tags": [
+      "mime",
+      "daily"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -395,8 +511,11 @@
     "title": "Dramatic Nursery Rhyme",
     "description": "Recite a nursery rhyme in a dramatic fashion.",
     "categoryId": "dare",
-    "tags": ["performance", "funny"],
-    "spicyness": 1,
+    "tags": [
+      "performance",
+      "funny"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -405,8 +524,11 @@
     "title": "Weirdest Thing Eaten",
     "description": "Share the weirdest thing you’ve ever eaten.",
     "categoryId": "truth",
-    "tags": ["food", "weird"],
-    "spicyness": 1,
+    "tags": [
+      "food",
+      "weird"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -415,8 +537,11 @@
     "title": "Act Like a Robot",
     "description": "Act like a robot for one minute.",
     "categoryId": "dare",
-    "tags": ["acting", "silly"],
-    "spicyness": 1,
+    "tags": [
+      "acting",
+      "silly"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -425,8 +550,11 @@
     "title": "Draw Opposite Portrait",
     "description": "Draw a portrait of the person sitting opposite you. If they don’t recognize themselves, you drink.",
     "categoryId": "dare",
-    "tags": ["drawing", "art"],
-    "spicyness": 1,
+    "tags": [
+      "drawing",
+      "art"
+    ],
+    "spicyness": 0,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -435,8 +563,11 @@
     "title": "Make Group Laugh",
     "description": "Try and make the group laugh. If no one does, drink.",
     "categoryId": "dare",
-    "tags": ["comedy", "performance"],
-    "spicyness": 1,
+    "tags": [
+      "comedy",
+      "performance"
+    ],
+    "spicyness": 0,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -445,8 +576,11 @@
     "title": "Last Embarrassing Moment",
     "description": "Tell us about the last time you were embarrassed.",
     "categoryId": "truth",
-    "tags": ["embarrassing", "story"],
-    "spicyness": 1,
+    "tags": [
+      "embarrassing",
+      "story"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -455,8 +589,11 @@
     "title": "Superhero Imitation",
     "description": "Imitate a superhero for one minute.",
     "categoryId": "dare",
-    "tags": ["impression", "fun"],
-    "spicyness": 1,
+    "tags": [
+      "impression",
+      "fun"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -465,8 +602,11 @@
     "title": "Share a Secret",
     "description": "Share a secret you’ve never told anyone.",
     "categoryId": "truth",
-    "tags": ["secret", "vulnerability"],
-    "spicyness": 3,
+    "tags": [
+      "secret",
+      "vulnerability"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -475,8 +615,11 @@
     "title": "Impersonate Left",
     "description": "Do your best impersonation of the person to your left.",
     "categoryId": "dare",
-    "tags": ["impression", "group"],
-    "spicyness": 2,
+    "tags": [
+      "impression",
+      "group"
+    ],
+    "spicyness": 1,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -485,8 +628,11 @@
     "title": "Worst Cooking Disaster",
     "description": "Tell us about your worst cooking disaster.",
     "categoryId": "truth",
-    "tags": ["cooking", "story"],
-    "spicyness": 1,
+    "tags": [
+      "cooking",
+      "story"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -495,8 +641,11 @@
     "title": "Speak Like Shakespeare",
     "description": "Speak like Shakespeare until your next turn.",
     "categoryId": "dare",
-    "tags": ["language", "fun"],
-    "spicyness": 1,
+    "tags": [
+      "language",
+      "fun"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -505,8 +654,11 @@
     "title": "Craziest Dream",
     "description": "Share the craziest dream you’ve ever had.",
     "categoryId": "truth",
-    "tags": ["dream", "story"],
-    "spicyness": 1,
+    "tags": [
+      "dream",
+      "story"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -515,8 +667,11 @@
     "title": "Juggle Three Items",
     "description": "Try to juggle three items of your choice. If you drop an item, drink.",
     "categoryId": "challenge",
-    "tags": ["skill", "physical"],
-    "spicyness": 2,
+    "tags": [
+      "skill",
+      "physical"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -525,19 +680,24 @@
     "title": "Be a Cat",
     "description": "Pretend you are a cat until your next turn.",
     "categoryId": "dare",
-    "tags": ["roleplay", "funny"],
-    "spicyness": 1,
+    "tags": [
+      "roleplay",
+      "funny"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
-
   {
     "id": "witty-001",
     "title": "Useless Talent",
     "description": "Share the most useless talent you possess.",
     "categoryId": "truth",
-    "tags": ["talent", "funny"],
-    "spicyness": 1,
+    "tags": [
+      "talent",
+      "funny"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -546,8 +706,11 @@
     "title": "Stranded Essentials",
     "description": "Discuss three things you’d bring if you were stranded on a deserted island.",
     "categoryId": "truth",
-    "tags": ["imagination", "strategy"],
-    "spicyness": 1,
+    "tags": [
+      "imagination",
+      "strategy"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -556,8 +719,11 @@
     "title": "Ridiculous Conspiracy",
     "description": "Share the most ridiculous conspiracy theory you’ve heard.",
     "categoryId": "truth",
-    "tags": ["conspiracy", "funny"],
-    "spicyness": 2,
+    "tags": [
+      "conspiracy",
+      "funny"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -566,8 +732,11 @@
     "title": "Dramatic Wikipedia",
     "description": "Do a dramatic reading of a random Wikipedia article.",
     "categoryId": "dare",
-    "tags": ["performance", "improv"],
-    "spicyness": 1,
+    "tags": [
+      "performance",
+      "improv"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -576,8 +745,11 @@
     "title": "Guess Wallet Money",
     "description": "Guess the amount of money in your wallet. If you’re wrong, take a sip.",
     "categoryId": "challenge",
-    "tags": ["money", "risk"],
-    "spicyness": 1,
+    "tags": [
+      "money",
+      "risk"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -586,8 +758,11 @@
     "title": "Childhood Embarrassment",
     "description": "Share the most embarrassing moment from your childhood.",
     "categoryId": "truth",
-    "tags": ["story", "childhood"],
-    "spicyness": 1,
+    "tags": [
+      "story",
+      "childhood"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -596,8 +771,11 @@
     "title": "Balance Spoon on Nose",
     "description": "Attempt to balance a spoon on your nose for one minute. If it falls, take a shot.",
     "categoryId": "challenge",
-    "tags": ["skill", "funny"],
-    "spicyness": 1,
+    "tags": [
+      "skill",
+      "funny"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -606,8 +784,11 @@
     "title": "Funny Pickup Line",
     "description": "Share a funny pickup line you’ve used or heard.",
     "categoryId": "dare",
-    "tags": ["pickup", "humor"],
-    "spicyness": 1,
+    "tags": [
+      "pickup",
+      "humor"
+    ],
+    "spicyness": 0,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -616,8 +797,11 @@
     "title": "Tongue Twister",
     "description": "Recite a tongue twister without making a mistake. Drink if you do.",
     "categoryId": "challenge",
-    "tags": ["language", "skill"],
-    "spicyness": 1,
+    "tags": [
+      "language",
+      "skill"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -626,8 +810,11 @@
     "title": "Act Like a Chicken",
     "description": "Act like a chicken for one minute.",
     "categoryId": "dare",
-    "tags": ["silly", "improv"],
-    "spicyness": 1,
+    "tags": [
+      "silly",
+      "improv"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -636,8 +823,11 @@
     "title": "Weird Google Search",
     "description": "Share the most ridiculous thing you’ve ever googled.",
     "categoryId": "truth",
-    "tags": ["internet", "embarrassing"],
-    "spicyness": 2,
+    "tags": [
+      "internet",
+      "embarrassing"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -646,8 +836,11 @@
     "title": "Touch Toes",
     "description": "Try to touch your toes without bending your knees. If you can’t, take a drink.",
     "categoryId": "challenge",
-    "tags": ["flexibility", "physical"],
-    "spicyness": 1,
+    "tags": [
+      "flexibility",
+      "physical"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -656,8 +849,11 @@
     "title": "Foolish for Love",
     "description": "Share the most foolish thing you’ve done for love.",
     "categoryId": "truth",
-    "tags": ["romance", "story"],
-    "spicyness": 2,
+    "tags": [
+      "romance",
+      "story"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -666,8 +862,11 @@
     "title": "Catwalk",
     "description": "Do a catwalk across the room. If you trip, take a shot.",
     "categoryId": "dare",
-    "tags": ["performance", "fashion"],
-    "spicyness": 1,
+    "tags": [
+      "performance",
+      "fashion"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -676,8 +875,11 @@
     "title": "Tell a Joke",
     "description": "Tell us your favorite joke. If no one laughs, take a sip.",
     "categoryId": "dare",
-    "tags": ["comedy", "performance"],
-    "spicyness": 1,
+    "tags": [
+      "comedy",
+      "performance"
+    ],
+    "spicyness": 0,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -686,8 +888,11 @@
     "title": "Celebrity Best Friend",
     "description": "Name a celebrity that you think would be your best friend.",
     "categoryId": "truth",
-    "tags": ["celeb", "fun"],
-    "spicyness": 1,
+    "tags": [
+      "celeb",
+      "fun"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -696,8 +901,11 @@
     "title": "Ridiculous Selfie",
     "description": "Take a selfie with the most ridiculous facial expression you can make and post it to your story.",
     "categoryId": "dare",
-    "tags": ["photo", "social"],
-    "spicyness": 2,
+    "tags": [
+      "photo",
+      "social"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -706,8 +914,11 @@
     "title": "DM a Random Follower",
     "description": "Go through your Instagram following and have the group pick a random person to DM with \"I love you.\"",
     "categoryId": "dare",
-    "tags": ["social", "phone"],
-    "spicyness": 4,
+    "tags": [
+      "social",
+      "phone"
+    ],
+    "spicyness": 2,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -716,8 +927,11 @@
     "title": "British Accent",
     "description": "Put on your best British accent until your next turn.",
     "categoryId": "dare",
-    "tags": ["accent", "fun"],
-    "spicyness": 1,
+    "tags": [
+      "accent",
+      "fun"
+    ],
+    "spicyness": 0,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -726,19 +940,24 @@
     "title": "Handstand",
     "description": "Attempt a handstand against the wall for five seconds. If you fail, take a shot.",
     "categoryId": "challenge",
-    "tags": ["physical", "skill"],
-    "spicyness": 3,
+    "tags": [
+      "physical",
+      "skill"
+    ],
+    "spicyness": 1,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
-
   {
     "id": "dirty-001",
     "title": "One-Night Stand Pick",
     "description": "Point to the person in this room you would want to have a one-night stand with.",
     "categoryId": "social",
-    "tags": ["adult", "flirty"],
-    "spicyness": 5,
+    "tags": [
+      "adult",
+      "flirty"
+    ],
+    "spicyness": 2,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -747,8 +966,11 @@
     "title": "Sensual Dance",
     "description": "Do a sensual dance for the person across from you.",
     "categoryId": "dare",
-    "tags": ["adult", "dance"],
-    "spicyness": 5,
+    "tags": [
+      "adult",
+      "dance"
+    ],
+    "spicyness": 2,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -757,8 +979,11 @@
     "title": "Hottest Body",
     "description": "Name the person who has the hottest body in this room.",
     "categoryId": "social",
-    "tags": ["adult", "compliment"],
-    "spicyness": 4,
+    "tags": [
+      "adult",
+      "compliment"
+    ],
+    "spicyness": 2,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -767,8 +992,11 @@
     "title": "Make Out Left",
     "description": "Make out with the person to your left for one minute.",
     "categoryId": "partner",
-    "tags": ["kiss", "partner"],
-    "spicyness": 5,
+    "tags": [
+      "kiss",
+      "partner"
+    ],
+    "spicyness": 2,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -777,8 +1005,11 @@
     "title": "Demonstrate Position",
     "description": "Demonstrate your favorite sexual position using pillows.",
     "categoryId": "dare",
-    "tags": ["adult", "demonstration"],
-    "spicyness": 5,
+    "tags": [
+      "adult",
+      "demonstration"
+    ],
+    "spicyness": 2,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -787,8 +1018,11 @@
     "title": "Share Sexy Photo",
     "description": "Share a sexy photo on your Instagram right now.",
     "categoryId": "dare",
-    "tags": ["social", "adult"],
-    "spicyness": 5,
+    "tags": [
+      "social",
+      "adult"
+    ],
+    "spicyness": 2,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -797,8 +1031,11 @@
     "title": "Guess Underwear Color",
     "description": "Guess the underwear color of the person to your right. If wrong, take a shot.",
     "categoryId": "dare",
-    "tags": ["adult", "game"],
-    "spicyness": 5,
+    "tags": [
+      "adult",
+      "game"
+    ],
+    "spicyness": 2,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -807,8 +1044,11 @@
     "title": "Describe Best Kiss",
     "description": "Describe the best kiss you’ve ever had.",
     "categoryId": "truth",
-    "tags": ["romance", "story"],
-    "spicyness": 4,
+    "tags": [
+      "romance",
+      "story"
+    ],
+    "spicyness": 2,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -817,8 +1057,11 @@
     "title": "Text Your Ex",
     "description": "Text your ex \"I miss you\" and show the screenshot to the group.",
     "categoryId": "dare",
-    "tags": ["phone", "embarrassing"],
-    "spicyness": 4,
+    "tags": [
+      "phone",
+      "embarrassing"
+    ],
+    "spicyness": 2,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -827,8 +1070,11 @@
     "title": "Flash Abs",
     "description": "Flash your abs or belly to the group.",
     "categoryId": "dare",
-    "tags": ["adult", "expose"],
-    "spicyness": 5,
+    "tags": [
+      "adult",
+      "expose"
+    ],
+    "spicyness": 2,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -837,8 +1083,11 @@
     "title": "Erotic Massage",
     "description": "Give an erotic massage to the person sitting next to you.",
     "categoryId": "partner",
-    "tags": ["adult", "touch"],
-    "spicyness": 5,
+    "tags": [
+      "adult",
+      "touch"
+    ],
+    "spicyness": 2,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -847,8 +1096,11 @@
     "title": "Floor Thrust",
     "description": "Show off your stroke game and thrust on the floor for a minute.",
     "categoryId": "dare",
-    "tags": ["adult", "explicit"],
-    "spicyness": 5,
+    "tags": [
+      "adult",
+      "explicit"
+    ],
+    "spicyness": 2,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -857,8 +1109,11 @@
     "title": "Bar Flirt",
     "description": "Flirt with someone from the group as if you were in a bar.",
     "categoryId": "dare",
-    "tags": ["flirty", "roleplay"],
-    "spicyness": 4,
+    "tags": [
+      "flirty",
+      "roleplay"
+    ],
+    "spicyness": 2,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -867,8 +1122,11 @@
     "title": "Sexy Crawl",
     "description": "Do a sexy crawl across the room.",
     "categoryId": "dare",
-    "tags": ["adult", "performance"],
-    "spicyness": 5,
+    "tags": [
+      "adult",
+      "performance"
+    ],
+    "spicyness": 2,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -877,8 +1135,11 @@
     "title": "Lap Dance",
     "description": "Give a lap dance to the person of your choice.",
     "categoryId": "partner",
-    "tags": ["adult", "dance"],
-    "spicyness": 5,
+    "tags": [
+      "adult",
+      "dance"
+    ],
+    "spicyness": 2,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -887,8 +1148,11 @@
     "title": "Kiss Earlobe",
     "description": "Kiss the earlobe of the person across from you.",
     "categoryId": "partner",
-    "tags": ["kiss", "partner"],
-    "spicyness": 4,
+    "tags": [
+      "kiss",
+      "partner"
+    ],
+    "spicyness": 2,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -897,8 +1161,11 @@
     "title": "Risky Text",
     "description": "Send a risky text to a random contact on your phone and show the group the response.",
     "categoryId": "dare",
-    "tags": ["phone", "adult"],
-    "spicyness": 5,
+    "tags": [
+      "phone",
+      "adult"
+    ],
+    "spicyness": 2,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -907,8 +1174,11 @@
     "title": "Make Out Two Minutes",
     "description": "Make out with someone of your choice for two minutes.",
     "categoryId": "partner",
-    "tags": ["kiss", "partner"],
-    "spicyness": 5,
+    "tags": [
+      "kiss",
+      "partner"
+    ],
+    "spicyness": 2,
     "requiresPlayers": true,
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
@@ -917,8 +1187,2282 @@
     "title": "Porn Star Impression",
     "description": "Do your best impression of a porn star moaning.",
     "categoryId": "dare",
-    "tags": ["adult", "impression"],
-    "spicyness": 5,
+    "tags": [
+      "adult",
+      "impression"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "college-001",
+    "title": "Shot for the Syllabus",
+    "description": "If you ever skipped a class this semester, take a shot. If not, nominate someone who did to take a sip.",
+    "categoryId": "social",
+    "tags": [
+      "college",
+      "class",
+      "drinking"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-11T00:00:00.000Z"
+  },
+  {
+    "id": "college-002",
+    "title": "Dorm Room Dare",
+    "description": "Do something you did in college that would get you in trouble now. If you refuse, drink twice.",
+    "categoryId": "dare",
+    "tags": [
+      "dorms",
+      "story",
+      "risky"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-11T00:00:00.000Z"
+  },
+  {
+    "id": "college-003",
+    "title": "Senior Secret",
+    "description": "Share one thing you hope no future roommate ever finds in your room. Drink if you won't say it.",
+    "categoryId": "truth",
+    "tags": [
+      "roommate",
+      "secret",
+      "college"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-11T00:00:00.000Z"
+  },
+  {
+    "id": "college-004",
+    "title": "Keg Stand Challenge",
+    "description": "Attempt a (safe) funky pose like a keg stand for 10 seconds. If you refuse or fail, take a big sip.",
+    "categoryId": "challenge",
+    "tags": [
+      "party",
+      "physical",
+      "drinking"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-11T00:00:00.000Z"
+  },
+  {
+    "id": "college-005",
+    "title": "Group Beer Pong Rule",
+    "description": "Choose a new rule for the group's next round of drinking games (e.g. clap before you drink). Everyone follows it or drinks.",
+    "categoryId": "group",
+    "tags": [
+      "rule",
+      "group",
+      "drinking"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-11T00:00:00.000Z"
+  },
+  {
+    "id": "college-006",
+    "title": "Craziest Party Story",
+    "description": "Tell the craziest thing that happened at a college party you attended. If you don't have one, take two sips.",
+    "categoryId": "truth",
+    "tags": [
+      "party",
+      "story"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-11T00:00:00.000Z"
+  },
+  {
+    "id": "college-007",
+    "title": "Swap Drinks",
+    "description": "Swap drinks with someone across from you for the next two rounds. If no one agrees, you take two sips.",
+    "categoryId": "social",
+    "tags": [
+      "drink",
+      "trade",
+      "group"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-11T00:00:00.000Z"
+  },
+  {
+    "id": "college-008",
+    "title": "All-Nighter Confession",
+    "description": "Have you ever pulled an all-nighter? Say why. If you lied, drink.",
+    "categoryId": "truth",
+    "tags": [
+      "study",
+      "college"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-11T00:00:00.000Z"
+  },
+  {
+    "id": "college-009",
+    "title": "Two Truths, One Shot",
+    "description": "Play two truths and a lie about college life. If the group guesses your lie, they drink; otherwise you drink.",
+    "categoryId": "game",
+    "tags": [
+      "game",
+      "truth",
+      "party"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-11T00:00:00.000Z"
+  },
+  {
+    "id": "college-010",
+    "title": "Library Silent Rule",
+    "description": "For the next two turns, you must stay silent and motion with charades. If you make any noise, take a drink.",
+    "categoryId": "wildcard",
+    "tags": [
+      "rule",
+      "funny"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-11T00:00:00.000Z"
+  },
+  {
+    "id": "college-011",
+    "title": "Freshman Mistake",
+    "description": "Share a dumb mistake you made in your first year. If it involved alcohol, nominate someone else to drink once.",
+    "categoryId": "truth",
+    "tags": [
+      "freshman",
+      "embarrassing",
+      "story"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-11T00:00:00.000Z"
+  },
+  {
+    "id": "college-012",
+    "title": "Shot or Dare",
+    "description": "Pick someone: they do a dare chosen by the group or take a shot. If they refuse both, they finish their drink.",
+    "categoryId": "dare",
+    "tags": [
+      "choice",
+      "drinking",
+      "group"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-11T00:00:00.000Z"
+  },
+  {
+    "id": "college-013",
+    "title": "Syllabus Rant",
+    "description": "Rant for 30 seconds about a course or professor. If no one else agrees, you drink.",
+    "categoryId": "social",
+    "tags": [
+      "rant",
+      "college"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-11T00:00:00.000Z"
+  },
+  {
+    "id": "college-014",
+    "title": "Find the Quietest Person",
+    "description": "Pick the quietest person in the group. They must take a sip and tell one fact about themselves.",
+    "categoryId": "group",
+    "tags": [
+      "social",
+      "icebreaker"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-11T00:00:00.000Z"
+  },
+  {
+    "id": "college-015",
+    "title": "Ramen Recipe",
+    "description": "Share your secret instant ramen hack. If you don't cook ramen, take a sip.",
+    "categoryId": "truth",
+    "tags": [
+      "food",
+      "college"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-11T00:00:00.000Z"
+  },
+  {
+    "id": "college-016",
+    "title": "Wingman Challenge",
+    "description": "Be someone's wingman for the next 3 minutes—help them flirt with another player. If you fail, both drink.",
+    "categoryId": "challenge",
+    "tags": [
+      "flirting",
+      "social"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-11T00:00:00.000Z"
+  },
+  {
+    "id": "college-017",
+    "title": "Last Text",
+    "description": "Read the last text you sent that contains the word 'party' (or drink if none).",
+    "categoryId": "truth",
+    "tags": [
+      "phone",
+      "embarrassing"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-11T00:00:00.000Z"
+  },
+  {
+    "id": "college-018",
+    "title": "Frat/Sorority Tale",
+    "description": "Share a weird or funny thing you saw at a frat/sorority event. If you haven't, drink.",
+    "categoryId": "social",
+    "tags": [
+      "frat",
+      "sorority",
+      "party"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-11T00:00:00.000Z"
+  },
+  {
+    "id": "college-019",
+    "title": "Study Group Swap",
+    "description": "For the next round pick someone to swap a confession with—both of you drink after sharing.",
+    "categoryId": "group",
+    "tags": [
+      "study",
+      "confession"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": true,
+    "createdAt": "2025-12-11T00:00:00.000Z"
+  },
+  {
+    "id": "college-020",
+    "title": "Senior Prank",
+    "description": "Describe a harmless prank you'd pull as a graduating senior. If the group thinks it's too tame, drink.",
+    "categoryId": "truth",
+    "tags": [
+      "prank",
+      "graduation"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-11T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-001",
+    "title": "Do a jumping jack until your next round",
+    "description": "Do a jumping jack until your next round.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "physical"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-002",
+    "title": "Go live and read a shampoo bottle",
+    "description": "Go live on Instagram and read the back of a shampoo bottle in a British accent.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "social",
+      "online"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-003",
+    "title": "Summon the rain",
+    "description": "Go outside and try to summon the rain.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "silly",
+      "outside"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-004",
+    "title": "Unbelievable truth",
+    "description": "Tell the group one truth about yourself that you think no one will believe.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "truth",
+      "social"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-005",
+    "title": "More than five exes",
+    "description": "Nod your head if you have more than 5 exes.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "relationships"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-006",
+    "title": "Funny nicknames",
+    "description": "Give funny nicknames to every player in this room.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "social",
+      "group"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-007",
+    "title": "Spoonful of hot sauce",
+    "description": "Eat a spoonful of hot sauce.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "food"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-008",
+    "title": "Sing with peanut butter",
+    "description": "Sing a song while having your mouth full of peanut butter.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "food",
+      "silly"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-009",
+    "title": "Single Ladies dance",
+    "description": "Dance to Beyonce's 'Single Ladies' and record it.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "dance",
+      "social",
+      "online"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-010",
+    "title": "Smell everyone's feet",
+    "description": "Smell everyone’s feet and announce the winner.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "gross",
+      "group"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-011",
+    "title": "Black tooth",
+    "description": "Color one of your front teeth black.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "appearance",
+      "silly"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-012",
+    "title": "Imitate your partner angry",
+    "description": "Imitate your partner when they are angry.",
+    "categoryId": "partner",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "partner",
+      "acting"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-013",
+    "title": "Act like a shy girl",
+    "description": "Act like a shy girl.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "acting"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-014",
+    "title": "Deep caption selfie",
+    "description": "Take a selfie with the player to your left, add a deep caption about what they mean to you, and post it on one of your social media.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "social",
+      "online"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-015",
+    "title": "Truth they need to know",
+    "description": "Tell someone in this room the truth they need to know.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "truth",
+      "social"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-016",
+    "title": "Teaspoon of mustard",
+    "description": "Eat one teaspoon of mustard.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "food"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-017",
+    "title": "Duct tape rip",
+    "description": "Let the player to your right stick duct tape somewhere on your body, and rip it off.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "physical"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-018",
+    "title": "Call Target about popcorn",
+    "description": "Call Target and ask if they deliver popcorn.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "prank",
+      "phone"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-019",
+    "title": "Trash inventory",
+    "description": "Dig through the trash and name everything you find.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "gross"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-020",
+    "title": "Sniff someone's armpit",
+    "description": "Sniff someone’s armpit.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "gross",
+      "physical"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-021",
+    "title": "Remove socks with your teeth",
+    "description": "Remove your socks with your teeth.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "physical",
+      "silly"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-safe-022",
+    "title": "Toilet paper mask",
+    "description": "Make a mask on your face using toilet paper.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "safe",
+      "dare",
+      "silly",
+      "props"
+    ],
+    "spicyness": 0,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-001",
+    "title": "Pick a nose",
+    "description": "Pick the nose of the player on your right.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "gross",
+      "physical"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-002",
+    "title": "Honk if I'm cute",
+    "description": "Go outside in the street and hold a sign that says ‘Honk if I’m cute’.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "outside",
+      "social"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-003",
+    "title": "Birthday call",
+    "description": "Call a random number and sing ‘Happy Birthday’ to them.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "prank",
+      "phone"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-004",
+    "title": "Toilet selfie",
+    "description": "Take a selfie with your toilet and post it online.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "gross",
+      "online"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-005",
+    "title": "Write with your tongue",
+    "description": "Write your name on the floor with your tongue.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "gross",
+      "physical"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-006",
+    "title": "Dog window",
+    "description": "Put your head out the window as if you were a dog.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "silly",
+      "outside"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-007",
+    "title": "Cut bangs",
+    "description": "Cut your hair into bangs in front of the group.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "appearance",
+      "risky"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-008",
+    "title": "Flirt with a pillow",
+    "description": "Flirt with a pillow as if it were your crush.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "acting",
+      "silly"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-009",
+    "title": "Frozen shirt",
+    "description": "Soak a shirt in water, put it in the freezer for 10 minutes, and then wear it.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "cold",
+      "physical"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-010",
+    "title": "Brush with a random item",
+    "description": "Let the group pick one item you have to brush your teeth with.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "gross",
+      "group"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-011",
+    "title": "Kiss a stomach",
+    "description": "Kiss the stomach of your favorite player in the room.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "physical",
+      "flirty"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-012",
+    "title": "Underwear over pants",
+    "description": "Put your underwear over your pants until the game’s over.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "appearance",
+      "silly"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-013",
+    "title": "Tongue nose",
+    "description": "If you can’t touch your own nose with your tongue, touch someone else’s nose with your tongue.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "physical",
+      "silly"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-014",
+    "title": "Adopted snap",
+    "description": "Send a snap of you pretending to cry to everyone on your Snapchat, with the caption that you found out you’re adopted.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "online",
+      "prank"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-015",
+    "title": "Tampon Insta story",
+    "description": "Take a picture of a tampon and post it in your Instagram story. Leave it there for 10 minutes.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "online",
+      "bold"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-016",
+    "title": "Trade clothes",
+    "description": "Trade clothes with the player in front of you.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "appearance",
+      "group"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-017",
+    "title": "Draw on your face",
+    "description": "Let someone draw anything on your face.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "appearance",
+      "group"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-018",
+    "title": "Pregnancy prank call",
+    "description": "Call your parents and tell them you’re pregnant. Even if you’re a boy.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "prank",
+      "phone"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-019",
+    "title": "Burp the alphabet",
+    "description": "Try to burp the alphabet.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "gross",
+      "silly"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-020",
+    "title": "Ice cubes down your pants",
+    "description": "Put ice cubes down your pants.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "cold",
+      "physical"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-021",
+    "title": "ABCs while twerking",
+    "description": "Sing your ABCs while twerking.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "dance",
+      "silly"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-crazy-022",
+    "title": "Call the police and ask if they need help",
+    "description": "Call the police and ask if they need help.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "crazy",
+      "dare",
+      "prank",
+      "phone"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-girls-001",
+    "title": "Egg crack",
+    "description": "Let a girl of your choice crack an egg on your head.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "girls-night",
+      "dare",
+      "gross",
+      "group"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-girls-002",
+    "title": "10-second manicure",
+    "description": "Do a manicure and paint all your nails for 10 seconds.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "girls-night",
+      "dare",
+      "beauty"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-girls-003",
+    "title": "Show your Google searches",
+    "description": "Let the group see your latest Google searches.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "girls-night",
+      "dare",
+      "phone",
+      "social"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-girls-004",
+    "title": "Kiss a bald head",
+    "description": "Kiss a bald man’s head.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "girls-night",
+      "dare",
+      "physical",
+      "flirty"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-girls-005",
+    "title": "Ask for free shots",
+    "description": "Ask for free shots from the bar the first time you’re out.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "girls-night",
+      "dare",
+      "bar",
+      "social"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-girls-006",
+    "title": "Crush forehead",
+    "description": "Write the name of your crush on your forehead and go to a bar like that.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "girls-night",
+      "dare",
+      "appearance",
+      "bar"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-girls-007",
+    "title": "Permanent mustache",
+    "description": "Give yourself a mustache with a permanent marker.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "girls-night",
+      "dare",
+      "appearance",
+      "silly"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-girls-008",
+    "title": "Jewelry in the toilet",
+    "description": "Drop a piece of jewelry into the toilet and then pick it up.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "girls-night",
+      "dare",
+      "gross",
+      "risky"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-girls-009",
+    "title": "Kiss food passionately",
+    "description": "Take an item of food from the fridge and kiss it passionately for 1 minute.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "girls-night",
+      "dare",
+      "food",
+      "silly"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-girls-010",
+    "title": "Ice in bra",
+    "description": "Stuff your bra with ice and let it sit for 1 minute.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "girls-night",
+      "dare",
+      "cold",
+      "physical"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-girls-011",
+    "title": "Cheesy pickup line",
+    "description": "Hit on a man with a cheesy pickup line.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "girls-night",
+      "dare",
+      "bar",
+      "flirty"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-girls-012",
+    "title": "Sign my chest",
+    "description": "Ask a stranger to sign your chest.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "girls-night",
+      "dare",
+      "bar",
+      "bold"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-girls-013",
+    "title": "Name all your exes",
+    "description": "Name all your exes in alphabetical order.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "girls-night",
+      "dare",
+      "relationships"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-girls-014",
+    "title": "Fridge lotion",
+    "description": "Use 3 ingredients in the fridge as a lotion.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "girls-night",
+      "dare",
+      "food",
+      "gross"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-girls-015",
+    "title": "Makeup tutorial pretend",
+    "description": "Pretend you’re filming a makeup tutorial.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "girls-night",
+      "dare",
+      "beauty",
+      "acting"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-girls-016",
+    "title": "Lipstick without mirror",
+    "description": "Apply lipstick without looking in the mirror.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "girls-night",
+      "dare",
+      "beauty",
+      "challenge"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-girls-017",
+    "title": "Best O-face",
+    "description": "Show your best O-face.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "girls-night",
+      "dare",
+      "flirty",
+      "sexual"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-girls-018",
+    "title": "Latest TikTok trend",
+    "description": "Record the latest TikTok trend and post it.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "girls-night",
+      "dare",
+      "online",
+      "dance"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-girls-019",
+    "title": "Phone number sprint",
+    "description": "Get as many phone numbers as you can for 2 minutes.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "girls-night",
+      "dare",
+      "bar",
+      "flirty",
+      "social"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-girls-020",
+    "title": "Clothes inside out",
+    "description": "Wear your clothes inside out.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "girls-night",
+      "dare",
+      "appearance",
+      "silly"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-bachelorette-001",
+    "title": "Dance-off with a stranger",
+    "description": "Have a dance-off with a stranger at the bar.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "bachelorette",
+      "dare",
+      "bar",
+      "dance"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-bachelorette-002",
+    "title": "Bride custom drink",
+    "description": "Let the bartender create a custom drink and name it after the bride-to-be.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "bachelorette",
+      "dare",
+      "bar",
+      "bride"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-bachelorette-003",
+    "title": "Guys' restroom selfie",
+    "description": "Go to the guys’ restroom and take a selfie.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "bachelorette",
+      "dare",
+      "bar",
+      "bold"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-bachelorette-004",
+    "title": "Gesture drink order",
+    "description": "Get someone to order you a drink only by using gestures, no words.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "bachelorette",
+      "dare",
+      "bar",
+      "social",
+      "challenge"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-bachelorette-005",
+    "title": "Fake ID compliment",
+    "description": "Try to convince someone you’re 18, and ask how your fake ID looks to them.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "bachelorette",
+      "dare",
+      "prank",
+      "bar"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-bachelorette-006",
+    "title": "Explain how babies are made",
+    "description": "Ask one of the guys in the room to explain how babies are made.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "bachelorette",
+      "dare",
+      "awkward",
+      "group"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-bachelorette-007",
+    "title": "Cherry stem tongue",
+    "description": "Tie a cherry stem with your tongue.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "bachelorette",
+      "dare",
+      "bar",
+      "flirty"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-bachelorette-008",
+    "title": "Toilet roll outfit",
+    "description": "Get a toilet roll and make a whole outfit out of it.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "bachelorette",
+      "dare",
+      "props",
+      "silly"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-bachelorette-009",
+    "title": "Foreign language drink order",
+    "description": "Order a drink in a foreign language.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "bachelorette",
+      "dare",
+      "bar",
+      "challenge"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-bachelorette-010",
+    "title": "Hug the doorman",
+    "description": "Hug the doorman of the bar you’re partying in.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "bachelorette",
+      "dare",
+      "bar",
+      "social"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-bachelorette-011",
+    "title": "Redhead photo",
+    "description": "Find a redhead and take a picture with them.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "bachelorette",
+      "dare",
+      "social",
+      "photo"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-bachelorette-012",
+    "title": "Bachelorette special drink",
+    "description": "Ask the bartender to make you a Bachelorette special.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "bachelorette",
+      "dare",
+      "bar",
+      "bride"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-bachelorette-013",
+    "title": "Marriage advice from a stranger",
+    "description": "Make a stranger give you their marriage pieces of advice.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "bachelorette",
+      "dare",
+      "social",
+      "bride"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-bachelorette-014",
+    "title": "Feeling horny status",
+    "description": "Change your Facebook status to ‘Feeling horny…’.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "bachelorette",
+      "dare",
+      "online",
+      "flirty"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-bachelorette-015",
+    "title": "Cheesy love song",
+    "description": "Go to a group of people, and start singing a cheesy love song to them.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "bachelorette",
+      "dare",
+      "social",
+      "music"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-bachelorette-016",
+    "title": "Guy makeover",
+    "description": "Let a guy give you a makeover with things you have in your bag.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "bachelorette",
+      "dare",
+      "beauty",
+      "social"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-bachelorette-017",
+    "title": "Swap clothing with a stranger",
+    "description": "Swap a piece of clothing with a stranger.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "bachelorette",
+      "dare",
+      "bar",
+      "bold"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-couples-001",
+    "title": "Whisper everything",
+    "description": "From now on until the game ends, you must whisper into my ear everything you want to say.",
+    "categoryId": "partner",
+    "tags": [
+      "do-or-drink",
+      "couples",
+      "dare",
+      "partner",
+      "intimate"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-couples-002",
+    "title": "Romantic movie reenactment",
+    "description": "Reenact with me a scene from our favorite romantic movie.",
+    "categoryId": "partner",
+    "tags": [
+      "do-or-drink",
+      "couples",
+      "dare",
+      "partner",
+      "romantic"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-couples-003",
+    "title": "Body-to-body massage",
+    "description": "Give me a body-to-body massage.",
+    "categoryId": "partner",
+    "tags": [
+      "do-or-drink",
+      "couples",
+      "dare",
+      "partner",
+      "intimate"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-couples-004",
+    "title": "Marshmallow love speech",
+    "description": "Stuff your mouth with marshmallows and describe how much you love me.",
+    "categoryId": "partner",
+    "tags": [
+      "do-or-drink",
+      "couples",
+      "dare",
+      "partner",
+      "food",
+      "silly"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-couples-005",
+    "title": "Imaginary pole dance",
+    "description": "Dance on an imaginary pole.",
+    "categoryId": "partner",
+    "tags": [
+      "do-or-drink",
+      "couples",
+      "dare",
+      "partner",
+      "dance",
+      "sexy"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-couples-006",
+    "title": "First kiss replay",
+    "description": "Kiss me like it’s our first time kissing.",
+    "categoryId": "partner",
+    "tags": [
+      "do-or-drink",
+      "couples",
+      "dare",
+      "partner",
+      "romantic"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-couples-007",
+    "title": "Body shot",
+    "description": "Let your partner take a body shot off your body.",
+    "categoryId": "partner",
+    "tags": [
+      "do-or-drink",
+      "couples",
+      "dare",
+      "partner",
+      "drinking",
+      "sexy"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-couples-008",
+    "title": "Skinny dipping",
+    "description": "Go skinny dipping for 5 minutes.",
+    "categoryId": "partner",
+    "tags": [
+      "do-or-drink",
+      "couples",
+      "dare",
+      "partner",
+      "outside",
+      "sexy"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-couples-009",
+    "title": "Bedroom fantasy whisper",
+    "description": "Whisper a bedroom fantasy into their ear.",
+    "categoryId": "partner",
+    "tags": [
+      "do-or-drink",
+      "couples",
+      "dare",
+      "partner",
+      "sexual"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-couples-010",
+    "title": "Banana tease",
+    "description": "Eat a banana in a nasty way, looking into your partner’s eyes.",
+    "categoryId": "partner",
+    "tags": [
+      "do-or-drink",
+      "couples",
+      "dare",
+      "partner",
+      "food",
+      "sexual"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-couples-011",
+    "title": "60-second twerk",
+    "description": "Twerk for 60 seconds, without music.",
+    "categoryId": "partner",
+    "tags": [
+      "do-or-drink",
+      "couples",
+      "dare",
+      "partner",
+      "dance"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-couples-012",
+    "title": "Sexy dance performance",
+    "description": "Perform a sexy dance for me.",
+    "categoryId": "partner",
+    "tags": [
+      "do-or-drink",
+      "couples",
+      "dare",
+      "partner",
+      "dance",
+      "sexy"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-couples-013",
+    "title": "Love letter out loud",
+    "description": "Write a love letter for your partner and read it out loud.",
+    "categoryId": "partner",
+    "tags": [
+      "do-or-drink",
+      "couples",
+      "dare",
+      "partner",
+      "romantic"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-couples-014",
+    "title": "New pickup line",
+    "description": "Hit me with a new pick-up line. ‘How you doin’?’ (from Friends) could be used!",
+    "categoryId": "partner",
+    "tags": [
+      "do-or-drink",
+      "couples",
+      "dare",
+      "partner",
+      "flirty"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-couples-015",
+    "title": "R-rated voicemail",
+    "description": "Go to another room and leave an R-rated voicemail for them to listen to later.",
+    "categoryId": "partner",
+    "tags": [
+      "do-or-drink",
+      "couples",
+      "dare",
+      "partner",
+      "phone",
+      "sexual"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-couples-016",
+    "title": "Passionate slow dance",
+    "description": "Share a passionate slow dance with your partner.",
+    "categoryId": "partner",
+    "tags": [
+      "do-or-drink",
+      "couples",
+      "dare",
+      "partner",
+      "romantic"
+    ],
+    "spicyness": 1,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-001",
+    "title": "Dirty GIF",
+    "description": "Send a dirty GIF to one of your contacts randomly without an explanation.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "online",
+      "sexual"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-002",
+    "title": "Strip by notifications",
+    "description": "Remove an article of clothing every second time you get a text notification.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "strip",
+      "phone"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-003",
+    "title": "Feed almonds mouth-only",
+    "description": "Feed someone almonds only using your mouth.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "food",
+      "sexual"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-004",
+    "title": "Handjob skills demo",
+    "description": "Demonstrate your best handjob skills.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "sexual"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-005",
+    "title": "Naked selfie to partner",
+    "description": "Send a naked selfie to your partner.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "online",
+      "sexual"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-006",
+    "title": "Give underwear to a stranger",
+    "description": "Give your underwear to a cute stranger.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "bold",
+      "sexual"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-007",
+    "title": "90s striptease",
+    "description": "Perform a striptease to a 90’s hit.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "strip",
+      "music"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-008",
+    "title": "Flash boobs",
+    "description": "If you’re a girl, flash your boobs for 1 second.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "sexual"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-009",
+    "title": "Thank you Daddy",
+    "description": "Say ‘Thank you Daddy’ every time the player on your left talks.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "sexual",
+      "running-gag"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-010",
+    "title": "Hot voicemail to your ex",
+    "description": "Leave a hot voicemail to your ex.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "phone",
+      "sexual"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-011",
+    "title": "Hand on thigh",
+    "description": "Keep your hand on the player on your right’s thigh until it’s your next round.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "physical",
+      "sexual"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-012",
+    "title": "Act out sexual positions",
+    "description": "Act out as many sexual positions as you can for 20 seconds (clothes on).",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "sexual",
+      "acting"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-013",
+    "title": "Call & moan",
+    "description": "Let the group pick one contact on your phone which you have to call and moan to.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "phone",
+      "sexual",
+      "prank"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-014",
+    "title": "Protection demo",
+    "description": "Teach the group how to use protection on a banana.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "sexual",
+      "education"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-015",
+    "title": "I'm coming status",
+    "description": "Put your Facebook status as ‘I’m Coming… I’m Coming…’ and then 1 minute later change it to ‘I came’.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "online",
+      "sexual",
+      "joke"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-016",
+    "title": "Seductive reading",
+    "description": "Read a page in a book in the most seductive voice you can.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "sexual",
+      "acting"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-017",
+    "title": "Finger a woman demo",
+    "description": "Demonstrate the proper way to finger a woman.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "sexual",
+      "education"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-018",
+    "title": "Guess kinks",
+    "description": "Guess every player in the room’s kinks.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "sexual",
+      "group"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-019",
+    "title": "Throw bra out the window",
+    "description": "Take your bra off and toss it out the window.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "strip",
+      "bold"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-020",
+    "title": "Random sext",
+    "description": "Close your eyes and send a sext to a random number.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "phone",
+      "sexual",
+      "prank"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-021",
+    "title": "Underwear shower",
+    "description": "While wearing only your underwear, hop in the shower with a player of your choice for 60 seconds.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "sexual",
+      "shower"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-022",
+    "title": "Blindfolded kiss",
+    "description": "Blindfolded, kiss whoever’s in front of you.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "sexual",
+      "kiss"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-023",
+    "title": "Imitate doggy",
+    "description": "Imitate a guy giving a doggy.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "sexual",
+      "acting"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-024",
+    "title": "Touch the butt",
+    "description": "Touch the butt of the player on your left.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "sexual",
+      "physical"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-025",
+    "title": "Describe an orgasm",
+    "description": "Describe how an orgasm feels in detail.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "sexual"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-026",
+    "title": "Seductive secretary",
+    "description": "Play a secretary trying to seduce their boss.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "sexual",
+      "roleplay"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-027",
+    "title": "Whipped cream lick",
+    "description": "Let someone lick whipped cream off your finger or cheek.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "food",
+      "sexual"
+    ],
+    "spicyness": 2,
+    "requiresPlayers": false,
+    "createdAt": "2025-12-09T00:00:00.000Z"
+  },
+  {
+    "id": "dod-rrated-028",
+    "title": "Best crawl",
+    "description": "Do your best crawl.",
+    "categoryId": "dare",
+    "tags": [
+      "do-or-drink",
+      "r-rated",
+      "dare",
+      "physical",
+      "silly"
+    ],
+    "spicyness": 2,
     "requiresPlayers": false,
     "createdAt": "2025-12-09T00:00:00.000Z"
   }

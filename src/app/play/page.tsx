@@ -151,8 +151,9 @@ const CardPlaceholderOuter = styled.div<{ color: string }>`
   height: 520px; /* larger fixed height for the card */
   border-radius: 14px;
   position: relative;
-  padding: 18px;
+  padding: 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 auto; /* center the card horizontally */
@@ -169,17 +170,19 @@ const CardPlaceholderOuter = styled.div<{ color: string }>`
 `;
 
 const CardInner = styled.div`
-  width: 86%;
-  height: 62%;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  background: transparent; /* removed dark inner card */
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
   color: var(--foreground);
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
+  line-height: 1.3;
+  overflow: auto;
+  padding: 0; /* allow outer padding to define spacing */
 `;
 
 const CardCategoryLabel = styled.div`
@@ -188,6 +191,21 @@ const CardCategoryLabel = styled.div`
   bottom: 8px;
   font-size: 12px;
   color: var(--muted);
+`;
+
+const PepperIcon = styled.div<{ show?: boolean }>`
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: ${(p) => (p.show ? 1 : 0)};
+  transition: opacity 200ms ease, transform 200ms ease;
+  transform: ${(p) => (p.show ? "scale(1)" : "scale(0.85)")};
+  pointer-events: none;
 `;
 
 const DeckArea = styled.div`
@@ -517,28 +535,34 @@ const PlayPage: React.FC = () => {
             >
               <CardPlaceholderOuter color={activeCategory.color}>
                 <CardInner>
-                  <div>
+                  <div style={{ width: "100%" }}>
                     {activeCard ? (
                       <>
-                        <div style={{ fontWeight: 700, marginBottom: 8 }}>
-                          {activeCard.title}
-                        </div>
-                        <div style={{ fontSize: 13 }}>
+                        <div style={{ fontSize: "clamp(18px, 5.5vw, 26px)", lineHeight: 1.3, whiteSpace: "normal" }}>
                           {activeCard.description}
                         </div>
                       </>
                     ) : (
                       <>
-                        <div style={{ fontWeight: 700, marginBottom: 8 }}>
+                        <div style={{ fontWeight: 700, marginBottom: 8, fontSize: "20px", textAlign: "center" }}>
                           No cards
                         </div>
-                        <div style={{ fontSize: 13 }}>
+                        <div style={{ fontSize: 14, textAlign: "center" }}>
                           Enable some categories to load cards into the deck.
                         </div>
                       </>
                     )}
                   </div>
                 </CardInner>
+
+                {/* spicy pepper indicator (bottom-left) */}
+                <PepperIcon show={!!activeCard && activeCard.spicyness === 1} aria-hidden={!activeCard || activeCard.spicyness !== 1}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M12 2c1.1 0 2 .9 2 2v1.2c2.8.5 5 2.9 5 5.8 0 3.3-2.7 6-6 6H9c-2.2 0-4-1.8-4-4 0-2.4 1.8-4.4 4.1-4.9C9.4 7.6 10.6 6 12 6V4c0-1.1.9-2 2-2z" fill="#ef4444"/>
+                    <path d="M8 20c0-2 1.8-3.8 4-4h6v2a4 4 0 0 1-4 4H9a1 1 0 0 1-1-2z" fill="#b91c1c"/>
+                  </svg>
+                </PepperIcon>
+
                 <CardCategoryLabel>
                   {activeCard
                     ? ALL_CATEGORIES.find((c) => c.id === activeCard.categoryId)
