@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useMemo, useState, useRef, useEffect } from "react";
+import React, { useMemo, useState, useRef, useEffect, useLayoutEffect } from "react";
 import styled from "styled-components";
 import {
   Card as BaseCard,
@@ -16,7 +16,7 @@ import {
 const Container = styled.div`
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* push PlayCard to top */
   justify-content: center;
   padding: 8px; /* reduce margin around card so dropdown/modal has less outer spacing */
 `;
@@ -31,19 +31,65 @@ const PlayCard = styled(BaseCard)`
   position: relative; /* allow overlay dropdown */
 `;
 
-const LogoBar = styled.div`
-  height: 56px;
+const TopBar = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+  flex: 0 0 20%; /* occupy 20% of PlayCard height */
+  min-height: 96px;
+
+  /* Mobile: stack logo above filters */
+  @media (max-width: 640px) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    flex: 0 0 auto; /* allow height to size naturally on mobile */
+  }
 `;
 
+const LogoSlot = styled.div`
+  flex: 0 0 25%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* keep logo to the left */
+  padding: 6px 12px;
+  /* let the SVG fill the full height of the TopBar */
+  svg {
+    height: 100%;
+    width: auto;
+    display: block;
+  }
+
+  @media (max-width: 640px) {
+    flex: 0 0 auto;
+    justify-content: center; /* center logo on mobile */
+    padding: 8px 12px;
+    svg {
+      height: 72px; /* reasonably large logo on mobile */
+      width: auto;
+    }
+  }
+`;
+
+// ensure FilterBar stretches full width on mobile
 const FilterBar = styled(BaseSection)`
-  padding: 16px 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  /* compact filter bar when used inside the TopBar */
+  padding: 0 12px;
+  border-bottom: none;
   position: relative;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+
+  @media (max-width: 640px) {
+    padding: 8px 12px;
+    height: auto;
+    width: 100%;
+  }
 `;
 
 const FilterHeader = styled.div`
@@ -96,12 +142,14 @@ const Dropdown = styled.div<{ open?: boolean }>`
   position: absolute;
   left: 12px;
   right: 12px;
-  top: 84px; /* below logo + filter header */
-  border-radius: 12px;
-  padding: 12px;
-  background: rgba(0, 0, 0, 0.72);
-  backdrop-filter: blur(8px);
+  top: 0; /* actual top will be set dynamically via inline style so dropdown sits below FilterBar */
+  border-radius: 14px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: blur(10px);
   color: var(--foreground);
+  box-shadow: 0 12px 36px rgba(2, 6, 23, 0.6);
+  border: 1px solid rgba(255,255,255,0.04);
 
   /* animate open/close */
   transform-origin: top center;
@@ -110,8 +158,8 @@ const Dropdown = styled.div<{ open?: boolean }>`
   opacity: ${(p) => (p.open ? "1" : "0")};
   pointer-events: ${(p) => (p.open ? "auto" : "none")};
   transition: opacity 220ms ease, transform 220ms cubic-bezier(0.2, 0.9, 0.2, 1);
-  z-index: 50;
-  max-height: calc(100% - 120px);
+  z-index: 60;
+  max-height: calc(100% - 140px);
   overflow: auto;
 `;
 
@@ -146,16 +194,16 @@ const CategoryName = styled.div`
 
 // Placeholder card styling
 const CardPlaceholderOuter = styled.div<{ color: string }>`
-  width: 360px;
-  max-width: 92%;
-  height: 520px; /* larger fixed height for the card */
+  width: 90%;
+  max-width: 90%;
+  height: 100%; /* fill the DeckArea height */
   border-radius: 14px;
   position: relative;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: center; /* center inner text vertically */
   margin: 0 auto; /* center the card horizontally */
   background: linear-gradient(
     180deg,
@@ -171,7 +219,7 @@ const CardPlaceholderOuter = styled.div<{ color: string }>`
 
 const CardInner = styled.div`
   width: 100%;
-  height: 100%;
+  flex: 1 1 auto;
   background: transparent; /* removed dark inner card */
   border-radius: 0;
   display: flex;
@@ -209,8 +257,8 @@ const PepperIcon = styled.div<{ show?: boolean }>`
 `;
 
 const DeckArea = styled.div`
-  flex: 1 1 auto; /* take remaining space */
-  padding: 18px;
+  flex: 1 1 90%; /* take ~90% of PlayCard height */
+  padding: 12px 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,13 +289,106 @@ const DrinkText = styled.div`
   box-shadow: 0 10px 30px rgba(239, 68, 68, 0.22);
 `;
 
+export function DrinkWithIreneLogo() {
+  return (
+    <svg
+      viewBox="0 0 640 180"
+      xmlns="http://www.w3.org/2000/svg"
+      width="100%"
+      height="96"
+      preserveAspectRatio="xMidYMid meet"
+      role="img"
+      aria-label="Drink with Irene logo"
+    >
+      <defs>
+        <linearGradient id="dwiAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#FB7185" />
+          <stop offset="100%" stopColor="#F97316" />
+        </linearGradient>
+
+        <filter id="dwiShadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx={0} dy={4} stdDeviation={5} floodColor="#000000" floodOpacity={0.15} />
+        </filter>
+      </defs>
+
+      {/* Cards + glass icon (kept to the left of the text) */}
+      <g transform="translate(36,36)" filter="url(#dwiShadow)">
+        <rect x={0} y={6} width={72} height={96} rx={10} fill="#E5E7EB" stroke="#9CA3AF" strokeWidth={2} transform="rotate(-8 0 6)" />
+        <rect x={22} y={4} width={72} height={96} rx={10} fill="#FFFFFF" stroke="#111827" strokeWidth={2.6} transform="rotate(6 22 4)" />
+        <rect x={34} y={20} width={52} height={12} rx={6} fill="url(#dwiAccent)" opacity={0.95} transform="rotate(6 34 20)" />
+        <circle cx={42} cy={48} r={5} fill="#111827" transform="rotate(6 42 48)" />
+
+        <path d="M38 64 L82 64 L76 104 H44 Z" fill="#FFFFFF" stroke="#111827" strokeWidth={2.6} strokeLinejoin="round" />
+        <path d="M42 74 L78 74 L74 98 H46 Z" fill="url(#dwiAccent)" opacity={0.9} />
+
+        <line x1={52} y1={82} x2={62} y2={94} stroke="#F9FAFB" strokeWidth={2.2} strokeLinecap="round" />
+        <line x1={64} y1={84} x2={74} y2={96} stroke="#F9FAFB" strokeWidth={2.2} strokeLinecap="round" />
+      </g>
+
+      {/* Left column: DRINK / WITH stacked */}
+      <g transform="translate(140,18)">
+        <text
+          x={8}
+          y={60}
+          fontSize={40}
+          fontFamily="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+          fill="#6B7280"
+          fontWeight={800}
+          letterSpacing={2}
+        >
+          DRINK
+        </text>
+        <text
+          x={8}
+          y={110}
+          fontSize={40}
+          fontFamily="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+          fill="#6B7280"
+          fontWeight={800}
+          letterSpacing={2}
+        >
+          WITH
+        </text>
+      </g>
+
+      {/* Right: Irene, larger and pink */}
+      <text
+        x={305}
+        y={98}
+        fontSize={120}
+        fontWeight={900}
+        fontFamily="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        fill="#FB7185"
+        style={{ dominantBaseline: 'middle' }}
+      >
+        Irene
+      </text>
+
+      {/* Accent underline to the right of Irene */}
+      <path
+        d="M360 132 L600 132"
+        stroke="url(#dwiAccent)"
+        strokeWidth={6}
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
 const PlayPage: React.FC = () => {
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState<Record<string, boolean>>(() => {
     const map: Record<string, boolean> = {};
-    ALL_CATEGORIES.forEach((c) => (map[c.id] = true)); // default all selected
+    ALL_CATEGORIES.forEach((c) => (map[c.id] = true));
     return map;
   });
+  // refs to handle outside clicks and measurements
+  const playCardRef = useRef<HTMLDivElement | null>(null);
+  const filterBarRef = useRef<HTMLDivElement | null>(null);
+  const dropdownRef = useRef<HTMLDivElement | null>(null);
+  const toggleRef = useRef<HTMLButtonElement | null>(null);
+
+  const [dropdownTop, setDropdownTop] = useState<number>(96);
 
   const selectedCategories = useMemo(
     () => ALL_CATEGORIES.filter((c) => selected[c.id]),
@@ -256,7 +397,6 @@ const PlayPage: React.FC = () => {
 
   const [cards, setCards] = useState<GameCard[]>([]);
 
-  // helper: shuffle an array (Fisher-Yates)
   const shuffleArray = <T,>(arr: T[]) => {
     const a = arr.slice();
     for (let i = a.length - 1; i > 0; i--) {
@@ -266,11 +406,9 @@ const PlayPage: React.FC = () => {
     return a;
   };
 
-  // persist/load filter selections
   const FILTER_KEY = "card_filters_v1";
 
   useEffect(() => {
-    // load saved filters first
     try {
       const raw = localStorage.getItem(FILTER_KEY);
       if (raw) {
@@ -282,7 +420,6 @@ const PlayPage: React.FC = () => {
             (c) =>
               (map[c.id] = parsed[c.id] === undefined ? true : !!parsed[c.id])
           );
-          // schedule setState to avoid synchronous setState inside effect
           setTimeout(() => setSelected(map), 0);
         }
       }
@@ -314,10 +451,12 @@ const PlayPage: React.FC = () => {
     }
   }, [selected]);
 
-  const filteredCards = useMemo(
-    () => cards.filter((c) => selected[c.categoryId]),
-    [cards, selected]
-  );
+  const filteredCards = useMemo(() => {
+    // use explicit boolean check to treat undefined as selected=true
+    const list = cards.filter((c) => selected[c.categoryId] !== false);
+    // return a shuffled copy so order is random every time filters change or cards reload
+    return shuffleArray(list);
+  }, [cards, selected]);
 
   const [currentIdx, setCurrentIdx] = useState(0);
 
@@ -339,7 +478,7 @@ const PlayPage: React.FC = () => {
     : ALL_CATEGORIES[0];
 
   const toggleCategory = (id: string) => {
-    setSelected((s) => ({ ...s, [id]: !s[id] }));
+    setSelected((s: Record<string, boolean>) => ({ ...s, [id]: !s[id] }));
     // reset index if none selected
     setCurrentIdx(0);
   };
@@ -466,54 +605,121 @@ const PlayPage: React.FC = () => {
       : "transform 160ms ease",
   } as React.CSSProperties;
 
+  // compute dropdown top so it sits just below the FilterBar
+  useLayoutEffect(() => {
+    const compute = () => {
+      try {
+        const fb = filterBarRef.current;
+        const pc = playCardRef.current;
+        if (!fb || !pc) return;
+        // offsetTop is relative to PlayCard (the offsetParent)
+        const top = fb.offsetTop + fb.offsetHeight + 8; // 8px gap
+        setDropdownTop(top);
+      } catch {
+        // ignore
+      }
+    };
+
+    compute();
+    const onResize = () => compute();
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, [open]);
+
+  // close dropdown when clicking outside it or pressing Escape
+  useEffect(() => {
+    if (!open) return;
+    const onPointer = (ev: PointerEvent) => {
+      const target = ev.target as Node | null;
+      if (
+        dropdownRef.current?.contains(target as Node) ||
+        filterBarRef.current?.contains(target as Node) ||
+        toggleRef.current?.contains(target as Node)
+      ) {
+        // click was inside dropdown or the filter bar/toggle, keep open
+        return;
+      }
+      setOpen(false);
+    };
+
+    const onKey = (ev: KeyboardEvent) => {
+      if (ev.key === "Escape") setOpen(false);
+    };
+
+    document.addEventListener("pointerdown", onPointer);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("pointerdown", onPointer);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
+
   return (
     <Container>
-      <PlayCard>
-        <LogoBar>{/* logo placeholder - leave space for logo here */}</LogoBar>
-
-        <FilterBar>
-          <FilterHeader>
-            <HeaderLeft>
-              <FilterTitle>Filters</FilterTitle>
-              <ColorPills>
-                {selectedCategories.map((c, i) => (
-                  <Pill key={i} color={c.color} />
-                ))}
-              </ColorPills>
-            </HeaderLeft>
-
-            <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
-              <ToggleButton
-                onClick={() => setOpen((v) => !v)}
-                aria-expanded={open}
-                aria-label="toggle categories"
-              >
-                <span
-                  style={{
-                    transform: open ? "rotate(180deg)" : "rotate(0deg)",
-                    display: "inline-block",
-                    transition: "transform 200ms",
-                  }}
-                >
-                  ▾
-                </span>
-              </ToggleButton>
+      <PlayCard ref={playCardRef}>
+        <TopBar>
+          <LogoSlot>
+            {/* logo SVG (transparent background) */}
+            <div style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "flex-start" }}>
+              <DrinkWithIreneLogo />
             </div>
-          </FilterHeader>
+          </LogoSlot>
 
-          <Dropdown open={open} aria-hidden={!open}>
-            {ALL_CATEGORIES.map((c) => (
-              <CategoryRow key={c.id}>
-                <Checkbox
-                  checked={!!selected[c.id]}
-                  onChange={() => toggleCategory(c.id)}
-                />
-                <Pill color={c.color} />
-                <CategoryName>{c.name}</CategoryName>
-              </CategoryRow>
-            ))}
-          </Dropdown>
-        </FilterBar>
+          <FilterBar ref={filterBarRef} style={{display: 'flex', alignItems: 'center' }}>
+           <FilterHeader>
+             <HeaderLeft>
+               <FilterTitle style={{ fontSize: 18 }} />
+               <ColorPills>
+                 {selectedCategories.map((c, i) => (
+                   <Pill key={i} color={c.color} />
+                 ))}
+               </ColorPills>
+             </HeaderLeft>
+
+             <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
+               <ToggleButton
+                 ref={toggleRef}
+                 onClick={() => setOpen((v) => !v)}
+                 aria-expanded={open}
+                 aria-label="toggle categories"
+               >
+                 <span
+                   style={{
+                     transform: open ? "rotate(180deg)" : "rotate(0deg)",
+                     display: "inline-block",
+                     transition: "transform 200ms",
+                   }}
+                 >
+                   ▾
+                 </span>
+               </ToggleButton>
+             </div>
+           </FilterHeader>
+
+          {/* Dropdown removed from here so it won't be clipped */}
+          </FilterBar>
+        </TopBar>
+
+        {/* Dropdown is now positioned relative to PlayCard (which is position: relative)
+            top is set dynamically (inline style) so it sits below the FilterBar and never covers it.
+        */}
+        <Dropdown
+          open={open}
+          aria-hidden={!open}
+          ref={dropdownRef}
+          style={{ top: dropdownTop }}
+        >
+          {ALL_CATEGORIES.map((c) => (
+            <CategoryRow key={c.id}>
+              <Checkbox
+                checked={!!selected[c.id]}
+                onChange={() => toggleCategory(c.id)}
+              />
+              <Pill color={c.color} />
+              <CategoryName>{c.name}</CategoryName>
+            </CategoryRow>
+          ))}
+        </Dropdown>
 
         <DeckArea>
           <div
@@ -521,8 +727,9 @@ const PlayPage: React.FC = () => {
               position: "relative",
               width: "100%",
               display: "flex",
-              alignItems: "center",
+              alignItems: "stretch",
               justifyContent: "center",
+              height: '100%'
             }}
           >
             <div
@@ -531,7 +738,7 @@ const PlayPage: React.FC = () => {
               onPointerMove={onPointerMove}
               onPointerUp={onPointerUp}
               onPointerCancel={onPointerUp}
-              style={{ touchAction: "none", ...transformStyle }}
+              style={{ touchAction: "none", height: '100%', ...transformStyle }}
             >
               <CardPlaceholderOuter color={activeCategory.color}>
                 <CardInner>
