@@ -460,7 +460,10 @@ const PlayPage: React.FC = () => {
   // reset index when filters change
   useEffect(() => {
     // schedule reset after render to avoid cascading renders
-    const t = setTimeout(() => setCurrentIdx(0), 0);
+    const t = setTimeout(() => {
+      setCurrentIdx(0);
+      setCardAppearing(false); // ensure no appearing animation on filter change
+    }, 0);
     return () => clearTimeout(t);
   }, [filteredCards.length]);
 
@@ -491,6 +494,7 @@ const PlayPage: React.FC = () => {
   const pendingDrag = useRef({ x: 0, y: 0 });
    const [animating, setAnimating] = useState(false);
    const [showDrink, setShowDrink] = useState(false);
+   const [cardAppearing, setCardAppearing] = useState(false);
 
   // Lock body scroll during drag and prevent touch events
   useEffect(() => {
@@ -576,18 +580,30 @@ const PlayPage: React.FC = () => {
     }
 
     setAnimating(true);
-    // animate off-screen by setting drag to large value
+    // animate off-screen by setting drag to large value - slower animation
     if (direction === "up")
       setDrag((d) => ({ x: d.x, y: -window.innerHeight }));
     else setDrag((d) => ({ x: window.innerWidth, y: d.y }));
 
+    // Wait for card to animate off-screen (slower transition)
     setTimeout(() => {
+      // First, reset position and prepare for new card (no transition)
       setAnimating(false);
       setDrag({ x: 0, y: 0 });
+      // Change card index - this will render the new card
       setCurrentIdx((i) =>
         filteredCards.length ? (i + 1) % filteredCards.length : 0
       );
-    }, 260);
+      // Show new card appearing from center (starts invisible, then fades in)
+      setCardAppearing(true);
+      
+      // After a brief moment, fade in the new card
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          setCardAppearing(false);
+        });
+      });
+    }, 500); // Slower animation duration
   };
 
   const triggerDrink = (direction: "down" | "left") => {
@@ -602,12 +618,22 @@ const PlayPage: React.FC = () => {
 
       setTimeout(() => {
         setShowDrink(false);
+        // Reset position first (no transition)
+        setAnimating(false);
         setDrag({ x: 0, y: 0 });
         // advance to next card after showing DRINK
         setCurrentIdx((i) =>
           filteredCards.length ? (i + 1) % filteredCards.length : 0
         );
-        setAnimating(false);
+        // Show new card appearing from center
+        setCardAppearing(true);
+        
+        // After a brief moment, fade in the new card
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            setCardAppearing(false);
+          });
+        });
       }, 900);
     }, 200);
   };
@@ -662,13 +688,16 @@ const PlayPage: React.FC = () => {
   const transformStyle = {
     transform: `translate3d(${drag.x}px, ${drag.y}px, 0) rotate(${(
       drag.x / 20
-    ).toFixed(2)}deg)`,
+    ).toFixed(2)}deg) scale(${cardAppearing ? 0.95 : 1})`,
+    opacity: cardAppearing ? 0 : 1,
     transition: animating
-      ? "transform 220ms cubic-bezier(.2,.9,.2,1)"
+      ? "transform 500ms cubic-bezier(.2,.9,.2,1), opacity 500ms ease"
       : isDragging
       ? "none"
-      : "transform 160ms ease",
-    willChange: "transform",
+      : cardAppearing
+      ? "transform 400ms cubic-bezier(.2,.9,.2,1), opacity 400ms ease"
+      : "transform 160ms ease, opacity 160ms ease",
+    willChange: "transform, opacity",
   } as React.CSSProperties;
 
   // cleanup RAF on unmount
@@ -821,6 +850,7 @@ const PlayPage: React.FC = () => {
             }}
           >
             <div
+              key={currentIdx}
               ref={cardRef}
               style={{ 
                 touchAction: "none", 
