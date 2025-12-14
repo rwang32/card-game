@@ -119,7 +119,7 @@
   {
     "id": "wild-010",
     "title": "Ridiculous Rumor",
-    "description": "Share the most ridiculous rumor you’ve ever heard about yourself.",
+    "description": "Share the most ridiculous rumor you've ever heard about yourself.",
     "categoryId": "truth",
     "tags": [
       "rumor",
@@ -132,7 +132,7 @@
   {
     "id": "wild-011",
     "title": "Cooking Show Pitch",
-    "description": "Pretend to be a contestant on a cooking show and describe the meal you’re preparing.",
+    "description": "Pretend to be a contestant on a cooking show and describe the meal you're preparing.",
     "categoryId": "dare",
     "tags": [
       "improv",
@@ -145,7 +145,7 @@
   {
     "id": "wild-012",
     "title": "10 Push-ups",
-    "description": "Do 10 push-ups. If you can’t, take a shot.",
+    "description": "Do 10 push-ups. If you can't, take a shot.",
     "categoryId": "challenge",
     "tags": [
       "fitness",
@@ -158,7 +158,7 @@
   {
     "id": "wild-013",
     "title": "Strangest Nap",
-    "description": "Reveal the strangest place you’ve ever had a nap.",
+    "description": "Reveal the strangest place you've ever had a nap.",
     "categoryId": "truth",
     "tags": [
       "story",
@@ -197,7 +197,7 @@
   {
     "id": "wild-016",
     "title": "Movie Scene Mime",
-    "description": "Perform a mime of a popular movie scene. Drink if the group can’t guess it.",
+    "description": "Perform a mime of a popular movie scene. Drink if the group can't guess it.",
     "categoryId": "dare",
     "tags": [
       "mime",
@@ -249,7 +249,7 @@
   {
     "id": "wild-020",
     "title": "Breakdance Attempt",
-    "description": "Attempt to breakdance. If you can’t pull off a move, take a shot.",
+    "description": "Attempt to breakdance. If you can't pull off a move, take a shot.",
     "categoryId": "challenge",
     "tags": [
       "dance",
@@ -275,7 +275,7 @@
   {
     "id": "wild-022",
     "title": "Fake Tour Guide",
-    "description": "Pretend to be a tour guide in a city you’ve never visited.",
+    "description": "Pretend to be a tour guide in a city you've never visited.",
     "categoryId": "dare",
     "tags": [
       "improv",
@@ -301,7 +301,7 @@
   {
     "id": "wild-024",
     "title": "Caught Doing Something",
-    "description": "Tell us about a time you got caught doing something you shouldn’t.",
+    "description": "Tell us about a time you got caught doing something you shouldn't.",
     "categoryId": "truth",
     "tags": [
       "story",
@@ -392,7 +392,7 @@
   {
     "id": "hilarious-003",
     "title": "Public Embarrassment",
-    "description": "Tell us about the most embarrassing thing you’ve done in public.",
+    "description": "Tell us about the most embarrassing thing you've done in public.",
     "categoryId": "truth",
     "tags": [
       "story",
@@ -405,7 +405,7 @@
   {
     "id": "hilarious-004",
     "title": "Lick Your Elbow",
-    "description": "Attempt to lick your elbow. If you can’t, take a sip.",
+    "description": "Attempt to lick your elbow. If you can't, take a sip.",
     "categoryId": "challenge",
     "tags": [
       "challenge",
@@ -419,7 +419,7 @@
     "id": "hilarious-005",
     "title": "Messiest Person",
     "description": "Name the messiest person in this room.",
-    "categoryId": "social",
+    "categoryId": "group",
     "tags": [
       "callout",
       "group"
@@ -457,7 +457,7 @@
   {
     "id": "hilarious-008",
     "title": "Touch Nose with Tongue",
-    "description": "Try to touch your nose with your tongue. If you can’t, take a sip.",
+    "description": "Try to touch your nose with your tongue. If you can't, take a sip.",
     "categoryId": "challenge",
     "tags": [
       "silly",
@@ -470,7 +470,7 @@
   {
     "id": "hilarious-009",
     "title": "Worst Advice",
-    "description": "Tell us the worst advice you’ve ever received.",
+    "description": "Tell us the worst advice you've ever received.",
     "categoryId": "truth",
     "tags": [
       "advice",
@@ -483,7 +483,7 @@
   {
     "id": "hilarious-010",
     "title": "Hum a Song",
-    "description": "Hum a popular song and let the group guess it. If they can’t, you drink.",
+    "description": "Hum a popular song and let the group guess it. If they can't, you drink.",
     "categoryId": "dare",
     "tags": [
       "music",
@@ -522,7 +522,7 @@
   {
     "id": "hilarious-013",
     "title": "Weirdest Thing Eaten",
-    "description": "Share the weirdest thing you’ve ever eaten.",
+    "description": "Share the weirdest thing you've ever eaten.",
     "categoryId": "truth",
     "tags": [
       "food",
@@ -548,7 +548,7 @@
   {
     "id": "hilarious-015",
     "title": "Draw Opposite Portrait",
-    "description": "Draw a portrait of the person sitting opposite you. If they don’t recognize themselves, you drink.",
+    "description": "Draw a portrait of the person sitting opposite you. If they don't recognize themselves, you drink.",
     "categoryId": "dare",
     "tags": [
       "drawing",
@@ -600,7 +600,7 @@
   {
     "id": "hilarious-019",
     "title": "Share a Secret",
-    "description": "Share a secret you’ve never told anyone.",
+    "description": "Share a secret you've never told anyone.",
     "categoryId": "truth",
     "tags": [
       "secret",
@@ -652,7 +652,7 @@
   {
     "id": "hilarious-023",
     "title": "Craziest Dream",
-    "description": "Share the craziest dream you’ve ever had.",
+    "description": "Share the craziest dream you've ever had.",
     "categoryId": "truth",
     "tags": [
       "dream",
@@ -704,7 +704,7 @@
   {
     "id": "witty-002",
     "title": "Stranded Essentials",
-    "description": "Discuss three things you’d bring if you were stranded on a deserted island.",
+    "description": "Discuss three things you'd bring if you were stranded on a deserted island.",
     "categoryId": "truth",
     "tags": [
       "imagination",
@@ -717,7 +717,7 @@
   {
     "id": "witty-003",
     "title": "Ridiculous Conspiracy",
-    "description": "Share the most ridiculous conspiracy theory you’ve heard.",
+    "description": "Share the most ridiculous conspiracy theory you've heard.",
     "categoryId": "truth",
     "tags": [
       "conspiracy",
@@ -743,7 +743,7 @@
   {
     "id": "witty-005",
     "title": "Guess Wallet Money",
-    "description": "Guess the amount of money in your wallet. If you’re wrong, take a sip.",
+    "description": "Guess the amount of money in your wallet. If you're wrong, take a sip.",
     "categoryId": "challenge",
     "tags": [
       "money",
@@ -782,7 +782,7 @@
   {
     "id": "witty-008",
     "title": "Funny Pickup Line",
-    "description": "Share a funny pickup line you’ve used or heard.",
+    "description": "Share a funny pickup line you've used or heard.",
     "categoryId": "dare",
     "tags": [
       "pickup",
@@ -821,7 +821,7 @@
   {
     "id": "witty-011",
     "title": "Weird Google Search",
-    "description": "Share the most ridiculous thing you’ve ever googled.",
+    "description": "Share the most ridiculous thing you've ever googled.",
     "categoryId": "truth",
     "tags": [
       "internet",
@@ -834,7 +834,7 @@
   {
     "id": "witty-012",
     "title": "Touch Toes",
-    "description": "Try to touch your toes without bending your knees. If you can’t, take a drink.",
+    "description": "Try to touch your toes without bending your knees. If you can't, take a drink.",
     "categoryId": "challenge",
     "tags": [
       "flexibility",
@@ -847,7 +847,7 @@
   {
     "id": "witty-013",
     "title": "Foolish for Love",
-    "description": "Share the most foolish thing you’ve done for love.",
+    "description": "Share the most foolish thing you've done for love.",
     "categoryId": "truth",
     "tags": [
       "romance",
@@ -952,7 +952,7 @@
     "id": "dirty-001",
     "title": "One-Night Stand Pick",
     "description": "Point to the person in this room you would want to have a one-night stand with.",
-    "categoryId": "social",
+    "categoryId": "group",
     "tags": [
       "adult",
       "flirty"
@@ -978,7 +978,7 @@
     "id": "dirty-003",
     "title": "Hottest Body",
     "description": "Name the person who has the hottest body in this room.",
-    "categoryId": "social",
+    "categoryId": "group",
     "tags": [
       "adult",
       "compliment"
@@ -991,7 +991,7 @@
     "id": "dirty-004",
     "title": "Make Out Left",
     "description": "Make out with the person to your left for one minute.",
-    "categoryId": "partner",
+    "categoryId": "group",
     "tags": [
       "kiss",
       "partner"
@@ -1042,7 +1042,7 @@
   {
     "id": "dirty-008",
     "title": "Describe Best Kiss",
-    "description": "Describe the best kiss you’ve ever had.",
+    "description": "Describe the best kiss you've ever had.",
     "categoryId": "truth",
     "tags": [
       "romance",
@@ -1082,7 +1082,7 @@
     "id": "dirty-011",
     "title": "Erotic Massage",
     "description": "Give an erotic massage to the person sitting next to you.",
-    "categoryId": "partner",
+    "categoryId": "group",
     "tags": [
       "adult",
       "touch"
@@ -1134,7 +1134,7 @@
     "id": "dirty-015",
     "title": "Lap Dance",
     "description": "Give a lap dance to the person of your choice.",
-    "categoryId": "partner",
+    "categoryId": "group",
     "tags": [
       "adult",
       "dance"
@@ -1147,7 +1147,7 @@
     "id": "dirty-016",
     "title": "Kiss Earlobe",
     "description": "Kiss the earlobe of the person across from you.",
-    "categoryId": "partner",
+    "categoryId": "group",
     "tags": [
       "kiss",
       "partner"
@@ -1173,7 +1173,7 @@
     "id": "dirty-018",
     "title": "Make Out Two Minutes",
     "description": "Make out with someone of your choice for two minutes.",
-    "categoryId": "partner",
+    "categoryId": "group",
     "tags": [
       "kiss",
       "partner"
@@ -1199,7 +1199,7 @@
     "id": "college-001",
     "title": "Shot for the Syllabus",
     "description": "If you ever skipped a class this semester, take a shot. If not, nominate someone who did to take a sip.",
-    "categoryId": "social",
+    "categoryId": "group",
     "tags": [
       "college",
       "class",
@@ -1282,7 +1282,7 @@
     "id": "college-007",
     "title": "Swap Drinks",
     "description": "Swap drinks with someone across from you for the next two rounds. If no one agrees, you take two sips.",
-    "categoryId": "social",
+    "categoryId": "group",
     "tags": [
       "drink",
       "trade",
@@ -1309,7 +1309,7 @@
     "id": "college-009",
     "title": "Two Truths, One Shot",
     "description": "Play two truths and a lie about college life. If the group guesses your lie, they drink; otherwise you drink.",
-    "categoryId": "game",
+    "categoryId": "wildcard",
     "tags": [
       "game",
       "truth",
@@ -1364,7 +1364,7 @@
     "id": "college-013",
     "title": "Syllabus Rant",
     "description": "Rant for 30 seconds about a course or professor. If no one else agrees, you drink.",
-    "categoryId": "social",
+    "categoryId": "group",
     "tags": [
       "rant",
       "college"
@@ -1429,7 +1429,7 @@
     "id": "college-018",
     "title": "Frat/Sorority Tale",
     "description": "Share a weird or funny thing you saw at a frat/sorority event. If you haven't, drink.",
-    "categoryId": "social",
+    "categoryId": "group",
     "tags": [
       "frat",
       "sorority",
@@ -1610,7 +1610,7 @@
   {
     "id": "dod-safe-010",
     "title": "Smell everyone's feet",
-    "description": "Smell everyone’s feet and announce the winner.",
+    "description": "Smell everyone's feet and announce the winner.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -1634,22 +1634,6 @@
       "dare",
       "appearance",
       "silly"
-    ],
-    "spicyness": 0,
-    "requiresPlayers": false,
-    "createdAt": "2025-12-09T00:00:00.000Z"
-  },
-  {
-    "id": "dod-safe-012",
-    "title": "Imitate your partner angry",
-    "description": "Imitate your partner when they are angry.",
-    "categoryId": "partner",
-    "tags": [
-      "do-or-drink",
-      "safe",
-      "dare",
-      "partner",
-      "acting"
     ],
     "spicyness": 0,
     "requiresPlayers": false,
@@ -1766,7 +1750,7 @@
   {
     "id": "dod-safe-020",
     "title": "Sniff someone's armpit",
-    "description": "Sniff someone’s armpit.",
+    "description": "Sniff someone's armpit.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -1830,7 +1814,7 @@
   {
     "id": "dod-crazy-002",
     "title": "Honk if I'm cute",
-    "description": "Go outside in the street and hold a sign that says ‘Honk if I’m cute’.",
+    "description": "Go outside in the street and hold a sign that says 'Honk if I'm cute'.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -1846,7 +1830,7 @@
   {
     "id": "dod-crazy-003",
     "title": "Birthday call",
-    "description": "Call a random number and sing ‘Happy Birthday’ to them.",
+    "description": "Call a random number and sing 'Happy Birthday' to them.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -1990,7 +1974,7 @@
   {
     "id": "dod-crazy-012",
     "title": "Underwear over pants",
-    "description": "Put your underwear over your pants until the game’s over.",
+    "description": "Put your underwear over your pants until the game's over.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -2006,7 +1990,7 @@
   {
     "id": "dod-crazy-013",
     "title": "Tongue nose",
-    "description": "If you can’t touch your own nose with your tongue, touch someone else’s nose with your tongue.",
+    "description": "If you can't touch your own nose with your tongue, touch someone else's nose with your tongue.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -2022,7 +2006,7 @@
   {
     "id": "dod-crazy-014",
     "title": "Adopted snap",
-    "description": "Send a snap of you pretending to cry to everyone on your Snapchat, with the caption that you found out you’re adopted.",
+    "description": "Send a snap of you pretending to cry to everyone on your Snapchat, with the caption that you found out you're adopted.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -2086,7 +2070,7 @@
   {
     "id": "dod-crazy-018",
     "title": "Pregnancy prank call",
-    "description": "Call your parents and tell them you’re pregnant. Even if you’re a boy.",
+    "description": "Call your parents and tell them you're pregnant. Even if you're a boy.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -2213,7 +2197,7 @@
   {
     "id": "dod-girls-004",
     "title": "Kiss a bald head",
-    "description": "Kiss a bald man’s head.",
+    "description": "Kiss a bald man's head.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -2229,7 +2213,7 @@
   {
     "id": "dod-girls-005",
     "title": "Ask for free shots",
-    "description": "Ask for free shots from the bar the first time you’re out.",
+    "description": "Ask for free shots from the bar the first time you're out.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -2388,7 +2372,7 @@
   {
     "id": "dod-girls-015",
     "title": "Makeup tutorial pretend",
-    "description": "Pretend you’re filming a makeup tutorial.",
+    "description": "Pretend you're filming a makeup tutorial.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -2517,7 +2501,7 @@
   {
     "id": "dod-bachelorette-003",
     "title": "Guys' restroom selfie",
-    "description": "Go to the guys’ restroom and take a selfie.",
+    "description": "Go to the guys' restroom and take a selfie.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -2550,7 +2534,7 @@
   {
     "id": "dod-bachelorette-005",
     "title": "Fake ID compliment",
-    "description": "Try to convince someone you’re 18, and ask how your fake ID looks to them.",
+    "description": "Try to convince someone you're 18, and ask how your fake ID looks to them.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -2630,7 +2614,7 @@
   {
     "id": "dod-bachelorette-010",
     "title": "Hug the doorman",
-    "description": "Hug the doorman of the bar you’re partying in.",
+    "description": "Hug the doorman of the bar you're partying in.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -2694,7 +2678,7 @@
   {
     "id": "dod-bachelorette-014",
     "title": "Feeling horny status",
-    "description": "Change your Facebook status to ‘Feeling horny…’.",
+    "description": "Change your Facebook status to 'Feeling horny…'.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -2756,65 +2740,16 @@
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
   {
-    "id": "dod-couples-001",
-    "title": "Whisper everything",
-    "description": "From now on until the game ends, you must whisper into my ear everything you want to say.",
-    "categoryId": "partner",
-    "tags": [
-      "do-or-drink",
-      "couples",
-      "dare",
-      "partner",
-      "intimate"
-    ],
-    "spicyness": 1,
-    "requiresPlayers": false,
-    "createdAt": "2025-12-09T00:00:00.000Z"
-  },
-  {
-    "id": "dod-couples-002",
-    "title": "Romantic movie reenactment",
-    "description": "Reenact with me a scene from our favorite romantic movie.",
-    "categoryId": "partner",
-    "tags": [
-      "do-or-drink",
-      "couples",
-      "dare",
-      "partner",
-      "romantic"
-    ],
-    "spicyness": 1,
-    "requiresPlayers": false,
-    "createdAt": "2025-12-09T00:00:00.000Z"
-  },
-  {
     "id": "dod-couples-003",
     "title": "Body-to-body massage",
-    "description": "Give me a body-to-body massage.",
-    "categoryId": "partner",
+    "description": "Give the person to your right a massage.",
+    "categoryId": "group",
     "tags": [
       "do-or-drink",
       "couples",
       "dare",
       "partner",
       "intimate"
-    ],
-    "spicyness": 1,
-    "requiresPlayers": false,
-    "createdAt": "2025-12-09T00:00:00.000Z"
-  },
-  {
-    "id": "dod-couples-004",
-    "title": "Marshmallow love speech",
-    "description": "Stuff your mouth with marshmallows and describe how much you love me.",
-    "categoryId": "partner",
-    "tags": [
-      "do-or-drink",
-      "couples",
-      "dare",
-      "partner",
-      "food",
-      "silly"
     ],
     "spicyness": 1,
     "requiresPlayers": false,
@@ -2824,7 +2759,7 @@
     "id": "dod-couples-005",
     "title": "Imaginary pole dance",
     "description": "Dance on an imaginary pole.",
-    "categoryId": "partner",
+    "categoryId": "group",
     "tags": [
       "do-or-drink",
       "couples",
@@ -2838,26 +2773,10 @@
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
   {
-    "id": "dod-couples-006",
-    "title": "First kiss replay",
-    "description": "Kiss me like it’s our first time kissing.",
-    "categoryId": "partner",
-    "tags": [
-      "do-or-drink",
-      "couples",
-      "dare",
-      "partner",
-      "romantic"
-    ],
-    "spicyness": 1,
-    "requiresPlayers": false,
-    "createdAt": "2025-12-09T00:00:00.000Z"
-  },
-  {
     "id": "dod-couples-007",
     "title": "Body shot",
-    "description": "Let your partner take a body shot off your body.",
-    "categoryId": "partner",
+    "description": "Let someone take a body shot off your body.",
+    "categoryId": "group",
     "tags": [
       "do-or-drink",
       "couples",
@@ -2871,27 +2790,10 @@
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
   {
-    "id": "dod-couples-008",
-    "title": "Skinny dipping",
-    "description": "Go skinny dipping for 5 minutes.",
-    "categoryId": "partner",
-    "tags": [
-      "do-or-drink",
-      "couples",
-      "dare",
-      "partner",
-      "outside",
-      "sexy"
-    ],
-    "spicyness": 1,
-    "requiresPlayers": false,
-    "createdAt": "2025-12-09T00:00:00.000Z"
-  },
-  {
     "id": "dod-couples-009",
     "title": "Bedroom fantasy whisper",
-    "description": "Whisper a bedroom fantasy into their ear.",
-    "categoryId": "partner",
+    "description": "Tell everyone your bedroom fantasy",
+    "categoryId": "group",
     "tags": [
       "do-or-drink",
       "couples",
@@ -2906,8 +2808,8 @@
   {
     "id": "dod-couples-010",
     "title": "Banana tease",
-    "description": "Eat a banana in a nasty way, looking into your partner’s eyes.",
-    "categoryId": "partner",
+    "description": "Eat a banana in a nasty way.",
+    "categoryId": "group",
     "tags": [
       "do-or-drink",
       "couples",
@@ -2924,7 +2826,7 @@
     "id": "dod-couples-011",
     "title": "60-second twerk",
     "description": "Twerk for 60 seconds, without music.",
-    "categoryId": "partner",
+    "categoryId": "group",
     "tags": [
       "do-or-drink",
       "couples",
@@ -2937,82 +2839,16 @@
     "createdAt": "2025-12-09T00:00:00.000Z"
   },
   {
-    "id": "dod-couples-012",
-    "title": "Sexy dance performance",
-    "description": "Perform a sexy dance for me.",
-    "categoryId": "partner",
-    "tags": [
-      "do-or-drink",
-      "couples",
-      "dare",
-      "partner",
-      "dance",
-      "sexy"
-    ],
-    "spicyness": 1,
-    "requiresPlayers": false,
-    "createdAt": "2025-12-09T00:00:00.000Z"
-  },
-  {
-    "id": "dod-couples-013",
-    "title": "Love letter out loud",
-    "description": "Write a love letter for your partner and read it out loud.",
-    "categoryId": "partner",
-    "tags": [
-      "do-or-drink",
-      "couples",
-      "dare",
-      "partner",
-      "romantic"
-    ],
-    "spicyness": 1,
-    "requiresPlayers": false,
-    "createdAt": "2025-12-09T00:00:00.000Z"
-  },
-  {
     "id": "dod-couples-014",
     "title": "New pickup line",
-    "description": "Hit me with a new pick-up line. ‘How you doin’?’ (from Friends) could be used!",
-    "categoryId": "partner",
+    "description": "Hit everyone with your best pickup line.",
+    "categoryId": "group",
     "tags": [
       "do-or-drink",
       "couples",
       "dare",
       "partner",
       "flirty"
-    ],
-    "spicyness": 1,
-    "requiresPlayers": false,
-    "createdAt": "2025-12-09T00:00:00.000Z"
-  },
-  {
-    "id": "dod-couples-015",
-    "title": "R-rated voicemail",
-    "description": "Go to another room and leave an R-rated voicemail for them to listen to later.",
-    "categoryId": "partner",
-    "tags": [
-      "do-or-drink",
-      "couples",
-      "dare",
-      "partner",
-      "phone",
-      "sexual"
-    ],
-    "spicyness": 1,
-    "requiresPlayers": false,
-    "createdAt": "2025-12-09T00:00:00.000Z"
-  },
-  {
-    "id": "dod-couples-016",
-    "title": "Passionate slow dance",
-    "description": "Share a passionate slow dance with your partner.",
-    "categoryId": "partner",
-    "tags": [
-      "do-or-drink",
-      "couples",
-      "dare",
-      "partner",
-      "romantic"
     ],
     "spicyness": 1,
     "requiresPlayers": false,
@@ -3116,7 +2952,7 @@
   {
     "id": "dod-rrated-007",
     "title": "90s striptease",
-    "description": "Perform a striptease to a 90’s hit.",
+    "description": "Perform a striptease to a 90's hit.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -3132,7 +2968,7 @@
   {
     "id": "dod-rrated-008",
     "title": "Flash boobs",
-    "description": "If you’re a girl, flash your boobs for 1 second.",
+    "description": "If you're a girl, flash your boobs for 1 second.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -3147,7 +2983,7 @@
   {
     "id": "dod-rrated-009",
     "title": "Thank you Daddy",
-    "description": "Say ‘Thank you Daddy’ every time the player on your left talks.",
+    "description": "Say 'Thank you Daddy' every time the player on your left talks.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -3179,7 +3015,7 @@
   {
     "id": "dod-rrated-011",
     "title": "Hand on thigh",
-    "description": "Keep your hand on the player on your right’s thigh until it’s your next round.",
+    "description": "Keep your hand on the player on your right's thigh until it's your next round.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -3244,7 +3080,7 @@
   {
     "id": "dod-rrated-015",
     "title": "I'm coming status",
-    "description": "Put your Facebook status as ‘I’m Coming… I’m Coming…’ and then 1 minute later change it to ‘I came’.",
+    "description": "Put your Facebook status as 'I'm Coming… I'm Coming…' and then 1 minute later change it to 'I came'.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -3293,7 +3129,7 @@
   {
     "id": "dod-rrated-018",
     "title": "Guess kinks",
-    "description": "Guess every player in the room’s kinks.",
+    "description": "Guess every player in the room's kinks.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",
@@ -3358,7 +3194,7 @@
   {
     "id": "dod-rrated-022",
     "title": "Blindfolded kiss",
-    "description": "Blindfolded, kiss whoever’s in front of you.",
+    "description": "Blindfolded, kiss whoever's in front of you.",
     "categoryId": "dare",
     "tags": [
       "do-or-drink",

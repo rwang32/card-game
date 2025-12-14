@@ -3,9 +3,7 @@ export type CategoryId =
   | "dare"
   | "group"
   | "challenge"
-  | "social"
-  | "wildcard"
-  | "partner";
+  | "wildcard";
 
 export type Spicyness = 0 | 1 | 2;
 
@@ -31,9 +29,7 @@ export const CATEGORIES: Category[] = [
   { id: "dare", name: "Dare", color: "#F97316" },
   { id: "group", name: "Group", color: "#34D399" },
   { id: "challenge", name: "Challenge", color: "#F59E0B" },
-  { id: "social", name: "Social", color: "#A78BFA" },
   { id: "wildcard", name: "Wildcard", color: "#F87171" },
-  { id: "partner", name: "Partner", color: "#FB7185" },
 ];
 
 const VALID_CATEGORY_IDS = new Set(CATEGORIES.map((c) => c.id));
