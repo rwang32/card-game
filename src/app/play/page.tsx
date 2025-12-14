@@ -19,6 +19,8 @@ const Container = styled.div`
   align-items: flex-start; /* push PlayCard to top */
   justify-content: center;
   padding: 8px; /* reduce margin around card so dropdown/modal has less outer spacing */
+  position: relative;
+  touch-action: none; /* prevent default touch behaviors */
 `;
 
 const PlayCard = styled(BaseCard)`
@@ -29,41 +31,31 @@ const PlayCard = styled(BaseCard)`
   flex-direction: column;
   overflow: hidden;
   position: relative; /* allow overlay dropdown */
+  touch-action: none; /* prevent default touch behaviors */
 `;
 
 const TopBar = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  flex-direction: column;
   border-bottom: 1px solid rgba(255, 255, 255, 0.02);
   flex: 0 0 20%; /* occupy 20% of PlayCard height */
   min-height: 96px;
-
-  /* Mobile: stack logo above filters */
-  @media (max-width: 640px) {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 6px;
-    flex: 0 0 auto; /* allow height to size naturally on mobile */
-  }
 `;
 
 const LogoSlot = styled.div`
-  flex: 0 0 25%;
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: flex-start; /* keep logo to the left */
   padding: 6px 12px;
-  /* let the SVG fill the full height of the TopBar */
+  /* let the SVG fill a reasonable height */
   svg {
-    height: 100%;
+    height: 48px;
     width: auto;
     display: block;
   }
 
   @media (max-width: 640px) {
-    flex: 0 0 auto;
     justify-content: center; /* center logo on mobile */
     padding: 8px 12px;
     svg {
@@ -73,7 +65,7 @@ const LogoSlot = styled.div`
   }
 `;
 
-// ensure FilterBar stretches full width on mobile
+// ensure FilterBar stretches full width
 const FilterBar = styled(BaseSection)`
   /* compact filter bar when used inside the TopBar */
   padding: 0 12px;
@@ -82,13 +74,12 @@ const FilterBar = styled(BaseSection)`
   z-index: 2;
   display: flex;
   align-items: center;
-  height: 100%;
+  width: 100%;
+  flex: 1;
   box-sizing: border-box;
 
   @media (max-width: 640px) {
     padding: 8px 12px;
-    height: auto;
-    width: 100%;
   }
 `;
 
@@ -97,12 +88,14 @@ const FilterHeader = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  width: 100%;
 `;
 
 const HeaderLeft = styled.div`
   display: flex;
   gap: 12px;
   align-items: center;
+  flex: 1;
 `;
 
 const FilterTitle = styled(Title)`
@@ -215,6 +208,8 @@ const CardPlaceholderOuter = styled.div<{ color: string }>`
   border-left: 2px solid ${(p) => p.color};
   border-right: 2px solid ${(p) => p.color};
   box-shadow: 0 12px 36px rgba(2, 6, 23, 0.6);
+  pointer-events: auto; /* ensure card can receive touches */
+  touch-action: none;
 `;
 
 const CardInner = styled.div`
@@ -229,8 +224,9 @@ const CardInner = styled.div`
   text-align: center;
   font-size: 18px;
   line-height: 1.3;
-  overflow: auto;
+  overflow: visible; /* changed from auto to prevent scroll interference */
   padding: 0; /* allow outer padding to define spacing */
+  touch-action: none;
 `;
 
 const CardCategoryLabel = styled.div`
@@ -262,6 +258,7 @@ const DeckArea = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  touch-action: none; /* prevent default touch behaviors */
 `;
 
 const swipeThreshold = 80; // px
@@ -489,8 +486,51 @@ const PlayPage: React.FC = () => {
   const dragging = useRef(false);
   const start = useRef({ x: 0, y: 0 });
   const cardRef = useRef<HTMLDivElement | null>(null);
-  const [animating, setAnimating] = useState(false);
-  const [showDrink, setShowDrink] = useState(false);
+  // RAF batching for pointer moves to avoid many React renders on mobile
+  const rafRef = useRef<number | null>(null);
+  const pendingDrag = useRef({ x: 0, y: 0 });
+   const [animating, setAnimating] = useState(false);
+   const [showDrink, setShowDrink] = useState(false);
+
+  // Lock body scroll during drag and prevent touch events
+  useEffect(() => {
+    if (isDragging) {
+      // Store original styles
+      const originalStyle = window.getComputedStyle(document.body).overflow;
+      const originalPosition = window.getComputedStyle(document.body).position;
+      const scrollY = window.scrollY;
+      const htmlStyle = window.getComputedStyle(document.documentElement).overflow;
+      
+      // Lock scroll
+      document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.width = '100%';
+      document.documentElement.style.overflow = 'hidden';
+      
+      // Prevent touchmove at document level to stop scrolling
+      const preventTouchMove = (e: TouchEvent) => {
+        e.preventDefault();
+        e.stopPropagation();
+      };
+      
+      // Use capture phase to catch events early - only prevent touchmove which causes scrolling
+      document.addEventListener('touchmove', preventTouchMove, { passive: false, capture: true });
+      
+      return () => {
+        // Restore scroll
+        document.body.style.overflow = originalStyle;
+        document.body.style.position = originalPosition;
+        document.body.style.top = '';
+        document.body.style.width = '';
+        document.documentElement.style.overflow = htmlStyle;
+        window.scrollTo(0, scrollY);
+        
+        // Remove touch listener
+        document.removeEventListener('touchmove', preventTouchMove, { capture: true } as EventListenerOptions);
+      };
+    }
+  }, [isDragging]);
 
   const onPointerDown = (e: React.PointerEvent) => {
     if (animating) return;
@@ -498,13 +538,27 @@ const PlayPage: React.FC = () => {
     setIsDragging(true);
     start.current = { x: e.clientX, y: e.clientY };
     (e.target as Element).setPointerCapture(e.pointerId);
+    // Prevent default to stop background scrolling on mobile
+    e.preventDefault();
+    e.stopPropagation();
   };
-
+ 
   const onPointerMove = (e: React.PointerEvent) => {
     if (!dragging.current) return;
+    // Prevent default to stop background scrolling on mobile
+    e.preventDefault();
+    e.stopPropagation();
+    // update pending values and start RAF if not running
     const dx = e.clientX - start.current.x;
     const dy = e.clientY - start.current.y;
-    setDrag({ x: dx, y: dy });
+    pendingDrag.current = { x: dx, y: dy };
+    if (rafRef.current == null) {
+      rafRef.current = requestAnimationFrame(function step() {
+        // flush pending to state in one render
+        setDrag({ x: pendingDrag.current.x, y: pendingDrag.current.y });
+        rafRef.current = requestAnimationFrame(step);
+      });
+    }
   };
 
   const resetCardPosition = (delay = 0) => {
@@ -562,12 +616,23 @@ const PlayPage: React.FC = () => {
     if (!dragging.current) return;
     dragging.current = false;
     setIsDragging(false);
+    e.preventDefault();
+    e.stopPropagation();
     try {
       (e.target as Element).releasePointerCapture(e.pointerId);
     } catch {}
 
-    const dx = drag.x;
-    const dy = drag.y;
+    // cancel RAF loop and ensure latest pending values are flushed
+    if (rafRef.current != null) {
+      cancelAnimationFrame(rafRef.current);
+      rafRef.current = null;
+    }
+    // use the last pending values if available to compute final direction
+    const dx = pendingDrag.current.x ?? drag.x;
+    const dy = pendingDrag.current.y ?? drag.y;
+
+    // also write the final values into state so UI is consistent
+    setDrag({ x: dx, y: dy });
 
     const absX = Math.abs(dx);
     const absY = Math.abs(dy);
@@ -603,7 +668,15 @@ const PlayPage: React.FC = () => {
       : isDragging
       ? "none"
       : "transform 160ms ease",
+    willChange: "transform",
   } as React.CSSProperties;
+
+  // cleanup RAF on unmount
+  useEffect(() => {
+    return () => {
+      if (rafRef.current != null) cancelAnimationFrame(rafRef.current);
+    };
+  }, []);
 
   // compute dropdown top so it sits just below the FilterBar
   useLayoutEffect(() => {
@@ -676,24 +749,22 @@ const PlayPage: React.FC = () => {
                </ColorPills>
              </HeaderLeft>
 
-             <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
-               <ToggleButton
-                 ref={toggleRef}
-                 onClick={() => setOpen((v) => !v)}
-                 aria-expanded={open}
-                 aria-label="toggle categories"
+             <ToggleButton
+               ref={toggleRef}
+               onClick={() => setOpen((v) => !v)}
+               aria-expanded={open}
+               aria-label="toggle categories"
+             >
+               <span
+                 style={{
+                   transform: open ? "rotate(180deg)" : "rotate(0deg)",
+                   display: "inline-block",
+                   transition: "transform 200ms",
+                 }}
                >
-                 <span
-                   style={{
-                     transform: open ? "rotate(180deg)" : "rotate(0deg)",
-                     display: "inline-block",
-                     transition: "transform 200ms",
-                   }}
-                 >
-                   ▾
-                 </span>
-               </ToggleButton>
-             </div>
+                 ▾
+               </span>
+             </ToggleButton>
            </FilterHeader>
 
           {/* Dropdown removed from here so it won't be clipped */}
@@ -729,16 +800,35 @@ const PlayPage: React.FC = () => {
               display: "flex",
               alignItems: "stretch",
               justifyContent: "center",
-              height: '100%'
+              height: '100%',
+              touchAction: "none"
+            }}
+            onPointerDown={onPointerDown}
+            onPointerMove={onPointerMove}
+            onPointerUp={onPointerUp}
+            onPointerCancel={onPointerUp}
+            onTouchStart={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+            }}
+            onTouchMove={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+            }}
+            onTouchEnd={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
             }}
           >
             <div
               ref={cardRef}
-              onPointerDown={onPointerDown}
-              onPointerMove={onPointerMove}
-              onPointerUp={onPointerUp}
-              onPointerCancel={onPointerUp}
-              style={{ touchAction: "none", height: '100%', ...transformStyle }}
+              style={{ 
+                touchAction: "none", 
+                width: '100%',
+                height: '100%',
+                position: 'relative',
+                ...transformStyle 
+              }}
             >
               <CardPlaceholderOuter color={activeCategory.color}>
                 <CardInner>
@@ -761,14 +851,6 @@ const PlayPage: React.FC = () => {
                     )}
                   </div>
                 </CardInner>
-
-                {/* spicy pepper indicator (bottom-left) */}
-                <PepperIcon show={!!activeCard && activeCard.spicyness === 1} aria-hidden={!activeCard || activeCard.spicyness !== 1}>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path d="M12 2c1.1 0 2 .9 2 2v1.2c2.8.5 5 2.9 5 5.8 0 3.3-2.7 6-6 6H9c-2.2 0-4-1.8-4-4 0-2.4 1.8-4.4 4.1-4.9C9.4 7.6 10.6 6 12 6V4c0-1.1.9-2 2-2z" fill="#ef4444"/>
-                    <path d="M8 20c0-2 1.8-3.8 4-4h6v2a4 4 0 0 1-4 4H9a1 1 0 0 1-1-2z" fill="#b91c1c"/>
-                  </svg>
-                </PepperIcon>
 
                 <CardCategoryLabel>
                   {activeCard
